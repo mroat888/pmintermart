@@ -1,6 +1,7 @@
 /wordpress/*
 /wp-content/*
 /PDS-AI/*
+/testRedirectTreepayPhp/*
 *.jpg
 *.gif
 *.png
