@@ -1,0 +1,12 @@
+/wordpress/*
+/wp-content/*
+/PDS-AI/*
+*.jpg
+*.gif
+*.png
+*.gif
+*.mp4
+*.pdf
+*.psd
+*.ai
+*.zip

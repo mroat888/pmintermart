@@ -1,0 +1,83 @@
+/*@import url(https://fonts.googleapis.com/css?family=Kanit&subset=thai,latin,latin-ext,vietnamese);*/
+
+
+html, body {
+	/*font-family: 'Kanit', sans-serif;*/
+	background-color: #f0f0f0;
+	height: 100%;
+}
+
+a, a:hover{
+	text-decoration: none;
+}
+
+.box_conner{
+  border-radius:3px 3px 3px 3px; 
+  -moz-border-radius:3px 3px 3px 3px; 
+  -webkit-border-radius:3px 3px 3px 3px; 
+}
+
+.div_width{
+	float: left;
+	width: 100%;
+}
+
+.mydiv-right-sm{
+	background-color: #f0f0f0;
+}
+.mydiv-left-sm{
+	background-color: #2b3743;
+}
+
+.link_green{
+	color: #358414;
+	font-weight: bold;
+}
+
+
+@media screen and (min-width: 992px) { //--- หน้าจอก มากว่าหรือเท่ากับ 992px ขึ้นไป
+	.mydiv-right-sm{
+		float: left;
+		width: 84%;
+	}
+	.mydiv-left-sm{
+		float: left;
+		width: 16%;
+	}
+	.my-col , .my-col-right{ 
+		position: relative;
+		min-height: 1px;
+		padding-left: 15px;
+		padding-top: 15px;
+	}
+	.my-col-right{ 
+		padding-left: 0px;
+	}
+
+	.div_dasboard_detail{
+		float:left; 
+		width:84%;
+	}
+}
+
+@media screen and (max-width: 991px) { //-- หนาจอ น้อยกว่าหรือเท่ากับ 991px ลงมา
+	.mydiv-right-sm{
+		float: left;
+		width: 100%;
+	}
+	.mydiv-left-sm{
+		float: left;
+		display: none;
+		width: 100%;
+	}
+	.my-col{ 
+		position: relative;
+		min-height: 1px;
+	  	padding: 15px;
+	}
+
+	.div_dasboard_detail{
+		float:left; 
+		width:100%;
+	}
+}

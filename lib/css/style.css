@@ -1,0 +1,176 @@
+*{
+	margin: 0px;
+  	padding: 0px;
+	box-sizing: border-box;
+    /*letter-spacing: 0.055em;*/
+}
+
+@media(min-width: 1360px) {
+	html {
+	    /*font-size: 62.5%; /* เพื่อให้ 1rem มีค่าประมาณ 10px */
+	    font-size: 100%;
+	}
+}
+
+@media(max-width: 1359px) {
+    html {
+        /*font-size: 0.75em; /* 12px*/
+        font-size: 85.5%
+    }
+}
+
+@media(max-width: 1060px) {
+    html {
+        /*font-size: 0.75em; /* 12px*/
+        font-size: 77.5%
+    }
+}
+
+@media(max-width: 1000px) {
+    html {
+        /*font-size: 0.75em; /* 12px*/
+        font-size: 70.5%
+    }
+}
+
+@media(max-width: 740px) { /*-- mobile --*/
+    html {
+        font-size: 67.5%
+    }
+}
+
+body {
+    /*font-family: "Sarabun";*/
+    font-family: "Prompt";
+    /*font-size: 0.9375em; /* 15px; */
+    /*font-size: 0.9375rem;*/
+    font-size: 1em; /* 16px; */
+    font-size: 1rem;
+}
+
+/*.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+      max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+}*/
+
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 1340px;
+    }
+}
+
+
+.font_black{
+    color: #212529;
+}
+.font_black:hover{
+    color: #212529;
+    text-decoration: underline;
+}
+
+.font_gray{
+    color: #666666;
+}
+
+.font_gray:hover{
+    color: #666666;
+    text-decoration: underline;
+}
+
+.font_white_yellow{
+	color: #FFFFFF;
+}
+
+.font_white_yellow:hover{
+	color: #ffd21d;
+	text-decoration: none;
+}
+
+.bg_blue{
+	background-color: #2959c2;
+}
+
+.bg_yellow{
+	background-color: #ffd21d;
+}
+
+.font_yellow{
+	color: #ffd21d;
+}
+
+.font_blue{
+	color: #2959c2;
+}
+
+.box_predetail{
+	width: 100%;
+	border:solid 1px #d6d6d6;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+.box_border{
+	border:solid 1px #d6d6d6;
+  	padding: 10px;
+}
+
+.span_decription {
+    font-size: 1em;
+}
+
+.span_decription h2{
+    font-size: 1.2em;
+}
+
+.card-title{
+    font-size: 1.45em;
+	font-weight: 400;
+	/*color: #2959c2;*/
+    color: #222;
+}
+
+.card_title_link:hover{
+	text-decoration: none;
+}
+
+.span_content{
+    padding-left: 2em; 
+    padding-right: 2em; 
+    letter-spacing: 0.099em; 
+    line-height: 1.8;
+    font-size:1.2em;
+}
+
+.wp_content ol, .wp_content ul{
+    margin-left: 3em;
+}
+.header_type_text_widget{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    margin-top: 30%;
+    font-size: 100%;
+    color: #FFFFFF;
+}

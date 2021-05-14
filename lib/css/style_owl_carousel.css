@@ -1,0 +1,91 @@
+.owl-dots{
+    margin-top: -2.5%; 
+    position: absolute ;
+    left:25%;
+    right:25%; 
+}
+
+.fanav{
+    font-size:3em;
+    color : #000000;
+}
+
+.orvertopfanav{
+    font-size:1.2em;
+    color : #000000;
+}
+
+
+.owl-theme .owl-nav.disabled {
+    margin-top: -25px; 
+    position : absolute ;
+    right:46%;
+}
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+    margin-top: -25px; 
+    position : absolute ;
+    right:46%;
+}
+
+.owl-carousel-banner .owl-nav .owl-next {
+    margin-top: -18%; 
+    position : absolute ;
+    right:2em;
+}
+
+.owl-carousel-banner .owl-nav .owl-prev {
+    margin-top: -18%; 
+    position : absolute ;
+    left:2em;   
+}
+
+.owl-carousel-hotdeal .owl-nav .owl-next {
+    position : absolute ;
+    margin-top: -34.5%; 
+    right: 0.625em;
+}
+
+.owl-carousel-hotdeal .owl-nav .owl-prev {
+    position : absolute ;
+    margin-top: -34.5%; 
+    right: 2em;
+}
+
+.owl-carousel-topview .owl-nav .owl-next {
+    position : absolute ;
+    margin-top: -34.5%; 
+    right: 0.625em;
+}
+
+.owl-carousel-topview .owl-nav .owl-prev {
+    position : absolute ;
+    margin-top: -34.5%; 
+    right: 2em;
+}
+
+
+.owl-carousel-banner-isonline .owl-nav .owl-next {
+    margin-top: -40%; 
+    position : absolute ;
+    right:0.5em;
+}
+
+.owl-carousel-banner-isonline .owl-nav .owl-prev {
+    margin-top: -40%; 
+    position : absolute ;
+    left:0.5em;   
+}
+
+
+.owl-carousel-group_products .owl-nav .owl-next {
+    position : absolute ;
+    margin-top: -30.5%; 
+    right: 0.625em;
+}
+
+.owl-carousel-group_products .owl-nav .owl-prev {
+    position : absolute ;
+    margin-top: -30.5%; 
+    right: 2em;
+}
