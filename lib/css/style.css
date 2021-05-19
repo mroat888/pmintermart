@@ -1,8 +1,8 @@
 *{
 	margin: 0px;
-  	padding: 0px;
+	padding: 0px;
 	box-sizing: border-box;
-    /*letter-spacing: 0.055em;*/
+  /*letter-spacing: 0.055em;*/
 }
 
 @media(min-width: 1360px) {
@@ -40,63 +40,63 @@
 }
 
 body {
-    /*font-family: "Sarabun";*/
-    font-family: "Prompt";
-    /*font-size: 0.9375em; /* 15px; */
-    /*font-size: 0.9375rem;*/
-    font-size: 1em; /* 16px; */
-    font-size: 1rem;
+	/*font-family: "Sarabun";*/
+	font-family: "Prompt";
+	/*font-size: 0.9375em; /* 15px; */
+	/*font-size: 0.9375rem;*/
+	font-size: 1em; /* 16px; */
+	font-size: 1rem;
 }
 
 /*.container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 @media (min-width: 576px) {
-    .container {
-      max-width: 540px;
-    }
+  .container {
+    max-width: 540px;
+  }
 }
 
 @media (min-width: 768px) {
-    .container {
-      max-width: 720px;
-    }
+  .container {
+    max-width: 720px;
+  }
 }
 
 @media (min-width: 992px) {
-    .container {
-      max-width: 960px;
-    }
+  .container {
+    max-width: 960px;
+  }
 }*/
 
 
 @media (min-width: 1200px) {
-    .container {
-      max-width: 1340px;
-    }
+  .container {
+    max-width: 1340px;
+  }
 }
 
 
 .font_black{
-    color: #212529;
+  color: #212529;
 }
 .font_black:hover{
-    color: #212529;
-    text-decoration: underline;
+  color: #212529;
+  text-decoration: underline;
 }
 
 .font_gray{
-    color: #666666;
+  color: #666666;
 }
 
 .font_gray:hover{
-    color: #666666;
-    text-decoration: underline;
+  color: #666666;
+  text-decoration: underline;
 }
 
 .font_white_yellow{
@@ -125,30 +125,30 @@ body {
 }
 
 .box_predetail{
-	width: 100%;
-	border:solid 1px #d6d6d6;
+	  width: 100%;
+	  border:solid 1px #d6d6d6;
     border-radius: 6px;
     padding: 10px;
 }
 
 .box_border{
 	border:solid 1px #d6d6d6;
-  	padding: 10px;
+	padding: 10px;
 }
 
 .span_decription {
-    font-size: 1em;
+  font-size: 1em;
 }
 
 .span_decription h2{
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 .card-title{
-    font-size: 1.45em;
+  font-size: 1.45em;
 	font-weight: 400;
 	/*color: #2959c2;*/
-    color: #222;
+  color: #222;
 }
 
 .card_title_link:hover{
@@ -156,21 +156,21 @@ body {
 }
 
 .span_content{
-    padding-left: 2em; 
-    padding-right: 2em; 
-    letter-spacing: 0.099em; 
-    line-height: 1.8;
-    font-size:1.2em;
+  padding-left: 2em; 
+  padding-right: 2em; 
+  letter-spacing: 0.099em; 
+  line-height: 1.8;
+  font-size:1.2em;
 }
 
 .wp_content ol, .wp_content ul{
-    margin-left: 3em;
+  margin-left: 3em;
 }
 .header_type_text_widget{
-    position: absolute;
-    text-align: center;
-    width: 100%;
-    margin-top: 30%;
-    font-size: 100%;
-    color: #FFFFFF;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  margin-top: 30%;
+  font-size: 100%;
+  color: #FFFFFF;
 }

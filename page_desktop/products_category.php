@@ -57,7 +57,7 @@
                                 <div class="col-3">
                                     <?php include("page_desktop/products_predetail.php");?>
                                 </div>
-                        <?
+                        <?php
                             } 
                             flush();
                         ?>
