@@ -18,7 +18,7 @@
 
 <!-- My Style -->
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_menutop_desktop.css" crossorigin="anonymous">
-<link rel="stylesheet" href="<?php echo URL; ?>lib/css/style.css?v210407-1" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php echo URL; ?>lib/css/style.css" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_owl_carousel.css?20210304-2" crossorigin="anonymous">
 
 

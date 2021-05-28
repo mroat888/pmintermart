@@ -35,7 +35,7 @@
     define("DB_NAME_WP", "enrhote_pmcontent");
     define("DB_USER_WP", "root");
     define("DB_PASS_WP", "");
-    define("URL_WP","http://127.0.0.1:8181/pmintermart/wp-content/");
-    define("URL_IMG_WP","http://127.0.0.1:8181/pmintermart/wp-content/");
+    define("URL_WP","http://127.0.0.1:8181/pmintermart/pm-wpcontent/");
+    define("URL_IMG_WP","http://127.0.0.1:8181/pmintermart/pm-wpcontent/");
 
 ?>
