@@ -14,7 +14,7 @@
 					<div class="col-12">
 						<div class="form-group">
 						    <label for="tname">ชื่อ - นามสกุล</label>
-						    <?php  if($_SESSION['tname'] !=""){?>
+						    <?php  if(!empty($_SESSION['tname']) && $_SESSION['tname'] !=""){?>
                             		    <input type="text" class="form-control" id="tname" name="tname" style="width:100%" placeholder="ชื่อโรงแรม/ชื่อบริษัท/ชื่อผู้ติดต่อ" value="<?=$_SESSION['tname']?>" required="required">
                             <?php  	}else{ ?>
                                         <input type="text" class="form-control" id="tname" name="tname" placeholder="ชื่อโรงแรม/ชื่อบริษัท/ชื่อผู้ติดต่อ" required="required">
@@ -22,7 +22,7 @@
 						</div>
 						<div class="form-group">
 						   	<label for="tphone">เบอร์โทรศัพท์</label>
-						    <?php  if($_SESSION['tphone'] !=""){ ?>
+						    <?php  if(!empty($_SESSION['tphone']) && $_SESSION['tphone'] !=""){ ?>
                                         <input type="text" class="form-control" id="tphone" name="tphone" placeholder="เบอร์โทรศัพท์" value="<?=$_SESSION['tphone']?>" required="required">
                             <?php  }else{ ?>
                                         <input type="text" class="form-control" id="tphone" name="tphone" placeholder="เบอร์โทรศัพท์" required="required">
@@ -30,7 +30,7 @@
 						</div>
 						<div class="form-group">
 						   	<label for="temail">Email Address</label>
-						    <?php  if($_SESSION['temail'] !=""){ ?>
+						    <?php  if(!empty($_SESSION['temail']) && $_SESSION['temail'] !=""){ ?>
                                         <input type="email" class="form-control" id="temail" name="temail" placeholder="Email Address" value="<?=$_SESSION['temail']?>">
                             <?php  	}else{ ?>
                                     	<input type="email" class="form-control" id="temail" name="temail" placeholder="Email Address">
@@ -38,7 +38,7 @@
 						</div>
 						<div class="form-group">
 						    <label for="exampleFormControlTextarea1">ที่อยู่</label>
-						    <?php  if($_SESSION['taddress'] !=""){ ?>
+						    <?php  if(!empty($_SESSION['taddress']) && $_SESSION['taddress'] !=""){ ?>
 						    			<textarea class="form-control" id="exampleFormControlTextarea1" id="taddress"
 						    			name = "taddress" rows="3" required="required"><?php echo $_SESSION['taddress']; ?></textarea>
 						    <?php 	}else{ ?>
@@ -49,8 +49,7 @@
 						<div class="form-row">
 						    <div class="form-group col-6">
 						    	<label for="inputEmail4">จังหวัด *</label>
-						      	<select class="form-control" id="tprovince" name="tprovince" 
-								  	onchange="choose_amphur(this);">
+						      	<select class="form-control" id="tprovince" name="tprovince">
 													<option value="0" selected="selected">-- จังหวัด --</option>
 										<?php 
 												$str_province = "select id, name_th from provinces order by name_th";
@@ -70,8 +69,7 @@
 						    </div>
 						    <div class="form-group col-6">
 						      	<label for="inputPassword4">อำเภอ/เขต *</label>
-						    	<select class="form-control" id="tamphur" name="tamphur" 
-						    		onchange="choose_district(this);">
+						    	<select class="form-control" id="tamphur" name="tamphur">
 										<?php
 												if($_SESSION['tamphur'] !="" && $_SESSION['tprovince'] !=""){
 													$param_amphur = array('PROVINCE_ID' => $_SESSION['tprovince']);
@@ -98,9 +96,9 @@
 						<div class="form-row">
 						    <div class="form-group col-6">
 						      	<label for="inputEmail4">ตำบล/แขวง</label>
-						      	<select class="form-control" id="tdistrict" name="tdistrict" onchange="choose_zipcode(this);">
+						      	<select class="form-control" id="tdistrict" name="tdistrict">
 										<?php
-												if($_SESSION['tdistrict'] !="" && $_SESSION['tamphur']){;
+												if($_SESSION['tdistrict'] != "" && $_SESSION['tamphur'] != ""){;
 													$param_district = array('AMPHUR_ID' => $_SESSION['tamphur']);
 													$str_district= "select id, name_th from districts 
 													where amphure_id = :AMPHUR_ID order by name_th";
@@ -182,7 +180,7 @@
 					<hr>
 					<div class="row" style="text-align: right; margin-top: 35px; margin-bottom: 35px;">
 						<div class="col-6" style="text-align: left;">
-							<button type="button" class="btn bg_yellow" onclick="javascript:history.back();">
+							<button type="button" class="btn bg_yellow" onclick="backpage_step1();">
 								<i class="fas fa-arrow-left"></i> ย้อนกลับ</button>
 						</div>
 						<div class="col-6">

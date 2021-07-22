@@ -4,9 +4,9 @@
 <body>
     <div class="container" style="width: 55%;">
         <div class="row">
-            <div class="col-12" style="text-align: center;">
+            <div class="col-12" style="text-align: center; margin:10px 0px 20px 0px">
                 <div style="background-color: #FF0000; min-height:80px;">
-                    <h1>บอกลาไดร์เป่าผม ราคาถูก เสียง่าย ไม่มีประกัน</h1>
+                    <h1 style="color:#FFF; padding-top:18px;">บอกลาไดร์เป่าผม ราคาถูก เสียง่าย ไม่มีประกัน</h1>
                 </div>
             </div>
         </div> 

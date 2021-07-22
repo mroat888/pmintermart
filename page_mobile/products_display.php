@@ -39,17 +39,17 @@
 						style="max-width:100%;" alt="<?php echo $record_products['name']; ?>" draggable="false">
 					</div>
 				</div>
-				<div class="col-12">
+				<div class="col-12" style="margin-top: 15px;">
 					<div class="row">
 						<div class="col-12">
-							<h1><?php echo $product_name; ?></h1>
+							<h1><?php echo $record_products['name']?></h1>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 15px;">
+					<div class="row" style="margin-top: 10px;">
 						<div class="col-12">
-							<font style="font-size: 28px; color: #FF0000;">
+							<span style="font-size: 28px; color: #FF0000;">
 								<strong>ราคา <?php echo number_format($record_sku['price']); ?> THB.</strong>
-							</font>
+							</span>
 						</div>
 					</div>
 					<!-- <div class="row" style="margin-top: 15px;">
@@ -65,7 +65,7 @@
 
 					<!-- <form class="form-inline" name="form1" method="post" enctype="multipart/form-data" 
                 		action="shoppingcart_aed.php?typ=add"> -->
-						<div class="row" style="margin-top: 15px;">
+						<div class="row" style="margin-top: 0px;">
 	                        <input type="hidden" name="radio_sku_id" id="radio_sku_id" 
 	                        value="<?php echo  $record_sku['id']; ?>">
 	                        <input type="hidden" class="form-control" id="sel_quantity" 
@@ -81,12 +81,13 @@
 			</div>
 			<div class="row" style="margin-top: 25px;">
 				<div class="col-12">
-					<button class="dropbtn bg_yellow" style="text-align: center; width: 150px; margin: 0px;">
+					<div class="dropbtn bg_yellow" style="text-align: center; width: 150px; line-height: 30px; 
+					margin: 0px; border:0px;">
 						Description
-					</button>
+					</div>
 					<hr class="bg_yellow" style="height: 2px; margin: 0px;">
 				</div>
-				<div class="col-12" style="margin-top: 25px; margin-bottom: 25px;">
+				<div id="content_detail" class="col-12" style="margin-top: 25px; margin-bottom: 25px; overflow:hidden;">
 					<?php echo $record_products['detail']; ?>
 				</div>
 			</div>
@@ -98,3 +99,29 @@
 </form>
 
 <?php include_once("page_mobile/footer.php");?>
+
+<style>
+	#content_detail ul li{
+		margin-left: 1.5em;
+	}
+	#content_detail{
+		/*height: 20em; */
+		/* overflow: hidden;
+		background: -webkit-linear-gradient(#212529, #212529,#eee);
+  		-webkit-background-clip: text;
+  		-webkit-text-fill-color: transparent; */
+	}
+
+</style>
+
+<script>
+	function switch_css(){
+		var children = document.getElementById("content_detail").children;
+		for (var i = 0; i < children.length; i++) {
+			//idArr.push(children[i].id);
+			// console.log(i);
+			$('img').width('100%');
+			$('img').height('auto');
+		}
+	}
+</script>

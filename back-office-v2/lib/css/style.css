@@ -1,0 +1,23 @@
+html, body {
+	background-color: #f0f0f0;
+	height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.div_status{ /* div แจ้งสถานะ */
+    z-index: 999;
+    display:none;
+    position:absolute;
+    background-color:green;
+    height:50px;
+    width:250px;
+    right:0;
+    margin-top:3em;
+    padding:15px;
+    border-radius:5px 0 0 5px;
+    color:#FFF;
+}
+
+a, a:hover{
+	text-decoration: none;
+}

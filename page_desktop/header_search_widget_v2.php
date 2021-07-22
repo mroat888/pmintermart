@@ -4,7 +4,7 @@
 		<div id = "py_rowtop" class="row">
 			<div class="col-3">
 				<a href="<?php echo URL; ?>">
-					<img id = "pm_logo" class="pm_logo" src="<?php echo URL_IMG;?>images/PM-LOGO-1.png">
+					<img id = "pm_logo" class="pm_logo" src="<?php echo URL_IMG;?>images/PM-LOGO-1.png" alt="pm intermart">
 				</a>
 			</div>
 			<div class="col-7" style="text-align: center;">
@@ -94,8 +94,9 @@
 	    <div class="modal-body">
 	    	<div id="div_login" class="div_login">
 	    		<div style="width: 100%; text-align: center;"><h3>เข้าสู่ระบบ</h3></div>
-		        <form name="form1" method="post" enctype="multipart/form-data" 
-		        	action="<?php echo URL; ?>login_aed.php">
+		        <!-- <form name="form1" method="post" enctype="multipart/form-data" 
+		        	action="<?php echo URL; ?>login_aed.php"> -->
+				<form id="flogin" name="form1" >
 		          	<div class="form-group">
 		            	<label for="tloginemail" class="col-form-label">Email.</label>
 		            	<input type="text" class="form-control" id="tloginemail" name="tloginemail" required="required">
@@ -106,6 +107,11 @@
 		          	</div>
 		          	<button type="submit" class="btn btn-primary">เข้าสู่ระบบ</button>
 		        </form>
+
+				<div class="div_status" style="display:none; font-size:25px; margin:25px auto; width:100%; text-align:center;">
+					login
+				</div>
+
 	    	</div>
 	    	<div id="div_register" class="div_register">
 	    		<div style="width: 100%; text-align: center;"><h3>สมัครสมาชิก</h3></div>

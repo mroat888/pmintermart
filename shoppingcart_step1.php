@@ -1,5 +1,13 @@
 <?php require("include_header.php"); ?>
 
+<?php
+    // if(!isset($_SESSION['cart_id']) || empty($_SESSION['cart_id'])){
+    //     echo "<script>";
+    //         echo "window.location.href='".URL."index.php'";
+    //     echo "</script>";
+    // }
+?>
+
 <script language="javascript">
     function delid(keyid){
         if(confirm("คุณต้องการลบใช่หรือไม่")){

@@ -36,7 +36,7 @@
 
 ?>
 
-<form name="form1" action="<?php echo URL; ?>confirm_order.php">
+<!-- <form name="form1" action="<?php echo URL."confirm_order.php"; ?>"> -->
 <div class="container-fluid">
 	<div class="row" style="margin-top: 35px; margin-bottom: 35px;">
 		
@@ -145,6 +145,7 @@
 										//echo $box_w."+".$box_l."+".$box_h."+".$box_weight;
 										$shipprice = $shippingrates->shippingPrice($box_w,$box_l,$box_h,$box_weight,$_SESSION['tprovince']);
 										$summary_netprice = $summary_price+$shipprice;
+										$_SESSION['summary_netprice'] = $summary_netprice;
 									?>
 									</tbody>
 
@@ -153,8 +154,10 @@
 						</div>
 					</div>
 					<div class="col-12" style="margin-top: 2em; margin-bottom: 2em">
+						<!-- <button type="button" class="btn bg_yellow" 
+						onclick="javascript:history.back();"><i class="fas fa-arrow-left"></i> ย้อนกลับ</button> -->
 						<button type="button" class="btn bg_yellow" 
-						onclick="javascript:history.back();"><i class="fas fa-arrow-left"></i> ย้อนกลับ</button>
+						onclick="javascript:backpage_step2();"><i class="fas fa-arrow-left"></i> ย้อนกลับ</button>
 					</div>
 				</div>
 				<div class="col-4" style="font-weight: bold;">
@@ -180,13 +183,35 @@
 						<hr>
 						<div class="row">
 							<div class="col-6">ยอดรวมทั้งหมด</div>
-							<div class="col-6" style="text-align: right;"><?php echo number_format($summary_netprice);?></div>
+							<div class="col-6" style="text-align: right;"><?php echo number_format($_SESSION['summary_netprice']);?></div>
 						</div>
 						<hr>
 						<div class="row" style="text-align: right; margin-top: 35px; margin-bottom: 35px;">
 							<div class="col-12">
-								<button type="submit" class="btn bg_yellow"><i class="fas fa-save"></i> ยืนยันการสั่งซื้อ</button>
+							<?php
+								if(isset($_SESSION['tpayment'])){
+								    //$_SESSION['summary_netprice'] = $summary_netprice*100;
+									if($_SESSION['tpayment'] == "credit_card"){
+										include_once("vendor_payment/payment.php");
+									}else{
+							?>
+										<button type="submit" class="btn bg_yellow" onclick="comfirm_order();">
+											<i class="fas fa-save"></i> ยืนยันการสั่งซื้อ
+										</button>
+							<?php
+									}
+								}else{
+							?>
+								<button type="submit" class="btn bg_yellow" onclick="comfirm_order();">
+									<i class="fas fa-save"></i> ยืนยันการสั่งซื้อ
+								</button>
+							<?php
+								}
+							?>
+
 							</div>
+
+							
 						</div>
 					</div>
 				</div>		
@@ -197,6 +222,7 @@
 		
 	</div>
 </div>
-</form>
+<!-- </form> -->
+
 
 <?php include_once("page_desktop/footer.php");?>

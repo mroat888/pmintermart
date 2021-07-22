@@ -33,7 +33,7 @@
     <link rel="canonical" href="<?php echo $canonical_page;?>" />
 
 </head>
-<body itemscope itemtype="http://schema.org/WebPage">   
+<body itemscope itemtype="http://schema.org/WebPage" onload="switch_css();">   
 
 <?php   if($devices == "mobile"){   ?>
             <div><?php include_once("page_mobile/products_display.php"); ?></div>
@@ -44,3 +44,4 @@
 <?php   }   ?>
 
 <?php require("include_footer.php"); ?>
+

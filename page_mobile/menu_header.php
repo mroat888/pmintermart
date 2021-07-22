@@ -41,7 +41,21 @@
 	style="width: 100%; top: -50px; position: absolute; background-color: #FFFFFF; height: 45px; border-bottom: 1px solid #999999;">
 		<div class="row" style="margin-top: 1.5em;">
 			<div class="col-3">
-				<a href="<?php echo URL?>member_login.php">เข้าสู่ระบบ</a>
+				<?php
+					if(isset($_SESSION['memid']) && $_SESSION['memid'] !=""){
+				?>
+						<a href="<?php echo URL?>logoff.php">ออกระบบ</a>
+				<?php	
+					}else{
+				?>
+						<a href="<?php echo URL?>member_login.php">เข้าสู่ระบบ</a>
+				<?php
+
+					}
+				?>
+				
+				
+				
 			</div>
 			<div class="col-3">
 				<a href="<?php echo URL?>member.php">สมัครสมาชิก</a>

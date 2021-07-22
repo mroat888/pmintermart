@@ -9,8 +9,9 @@
 			<div class="row" style="margin-top: 25px; margin-bottom: 25px;">
 				<div class="col-12" style="margin-top: 25px;">
 					<div style="width: 100%; text-align: center;"><h3>เข้าสู่ระบบ</h3></div>
-					<form name="form1" method="post" enctype="multipart/form-data" 
-		        	action="<?php echo URL; ?>login_aed.php">
+					<!-- <form name="form1" method="post" enctype="multipart/form-data" 
+		        	action="<?php echo URL; ?>login_aed.php"> -->
+					<form id="flogin" name="form1" >
 		          	<div class="form-group">
 		            	<label for="tloginemail" class="col-form-label">Email.</label>
 		            	<input type="text" class="form-control" id="tloginemail" name="tloginemail" required="required">

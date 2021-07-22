@@ -21,7 +21,7 @@
         $canonical_page = URL."group/".$record_type1['id']."/".$canonical_type1_name."/"."1/";
     }
 
-    $meta_title = $type1_name;
+    $meta_title = $record_type1['meta_title'] ;
     $meta_description = $record_type1['meta_description'];
 ?>
 

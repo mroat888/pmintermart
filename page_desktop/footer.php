@@ -55,13 +55,23 @@
                     </p>
                 </div>
                 <div class="col-3">
-                   <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ร้านค้าออนไลน์</h4>
-                        <a href="<?php echo URL;?>about.php" class="font_gray">เกี่ยวกับเรา</a><br>
-                        <a href="<?php echo URL."products_hotsale.php"?>" class="font_gray">โปรโมชั่น</a><br>
-                        <a href="<?php echo URL;?>howtopay.php" class="font_gray">วิธีการชำระเงิน</a><br>
-                        <a href="<?php echo URL;?>delivery.php" class="font_gray">การจัดส่ง</a><br>
-                        <a href="<?php echo URL;?>content.php" class="font_gray">บล๊อก</a><br>
-                        <a href="<?php echo URL;?>contactus.php" class="font_gray">ติดต่อเรา</a>
+                    <div class="row">
+                        <div class="col-12">
+                            <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ข้อมูลเพิ่มเติม</h4>
+                            <a href="<?php echo URL;?>about.php" class="font_gray">เกี่ยวกับเรา</a><br>
+                            <a href="<?php echo URL;?>content.php" class="font_gray">บล๊อก</a><br>
+                        </div>
+                        <div class="col-12" style="margin-top:2em;">
+                            <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ช่วยเหลือและสนับสนุน</h4>
+                            <!-- <a href="<?php echo URL."products_hotsale.php"?>" class="font_gray">โปรโมชั่น</a><br> -->
+                            <a href="<?php echo URL;?>howtopay.php" class="font_gray">วิธีการชำระเงิน</a><br>
+                            <a href="<?php echo URL;?>delivery.php" class="font_gray">การจัดส่งและเงื่อนไข</a><br>
+                            <a href="<?php echo URL;?>terms_and_condition.php"class="font_gray">ข้อตกลงและเงื่อนไข</a><br>
+                            <a href="<?php echo URL;?>return_and_refund.php"class="font_gray">การคืนสินค้า/การคืนเงิน/ยกเลิกการซื้อ</a><br>
+                            <a href="<?php echo URL;?>privacy_policies.php" class="font_gray">นโยบายความเป็นส่วนตัว</a><br>
+                            <a href="<?php echo URL;?>cookie_policy.php" class="font_gray">นโยบายการใช้คุกกี้</a><br>
+                        </div>
+                    </div> 
                 </div>
                 <div class="col-3">
                     <div class="row">
@@ -71,7 +81,7 @@
                             <i class="fab fa-facebook-square"></i></a>&nbsp;
                             <a href="https://www.youtube.com/channel/UCBXT2FuvV-YFfTjpI41BlDA" target="_blank" class="font_gray"><i class="fab fa-youtube"></i></a>&nbsp;
                             <a href="javascript:void(0)" class="font_gray"><i class="fab fa-twitter"></i></a>&nbsp;
-                            <a href="https://www.instagram.com/pm_intermart/" target="_blank"class="font_gray"><i class="fab fa-instagram"></i></a>&nbsp;
+                            <a href="https://www.instagram.com/pmintermartofficial/" target="_blank"class="font_gray"><i class="fab fa-instagram"></i></a>&nbsp;
                             <a href="https://page.line.me/pmintermart" target="_blank" class="font_gray"><i class="fab fa-line"></i></a>
                         </div>
                         <div class="col-12" style="margin-top:2em;">
@@ -106,6 +116,7 @@
                             </form>
                         </div>
                     </div>
+
                 </div>        
             </div>
         </div>
@@ -124,7 +135,7 @@
                     <span>2021 PM INTERMART CO.,LTD. All Rights Reserved.</span>
                 </div>
                 <div class="col-6" style="text-align: right;">
-                    <!-- <span>นโยบายความเป็นส่วนตัว</span> -->
+                     
                 </div>
             </div>
         </div>

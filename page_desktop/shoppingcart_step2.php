@@ -10,11 +10,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-8">
-				<div class="box_predetail">
-					<div class="col-12"><strong>ข้อมูลผู้รับสินค้า</strong></div>
-					<hr>
+				<div class="card">
+					<div class="card-header">
+						<strong>ข้อมูลทีอยู่จัดส่ง</strong>
+					</div>
 					
-					<div class="col-12">
+					<div class="card-body">
 						<div class="form-group">
 						    <label for="tname">ชื่อ - นามสกุล</label>
 						    <?php  if(isset($_SESSION['tname']) && $_SESSION['tname'] !=""){?>
@@ -52,8 +53,7 @@
 						<div class="form-row">
 						    <div class="form-group col-6">
 						    	<label for="inputEmail4">จังหวัด *</label>
-						      	<select class="form-control" id="tprovince" name="tprovince" 
-								  	onchange="choose_amphur(this);">
+						      	<select class="form-control" id="tprovince" name="tprovince" >
 													<option value="0" selected="selected">-- จังหวัด --</option>
 										<?php 
 												$str_province = "select id, name_th from provinces order by name_th";
@@ -73,8 +73,7 @@
 						    </div>
 						    <div class="form-group col-6">
 						      	<label for="inputPassword4">อำเภอ/เขต *</label>
-						    	<select class="form-control" id="tamphur" name="tamphur" 
-						    		onchange="choose_district(this);">
+						    	<select class="form-control" id="tamphur" name="tamphur">
 										<?php
 												if($_SESSION['tamphur'] !="" && $_SESSION['tprovince'] !=""){
 													$param_amphur = array('PROVINCE_ID' => $_SESSION['tprovince']);
@@ -101,7 +100,7 @@
 						<div class="form-row">
 						    <div class="form-group col-6">
 						      	<label for="inputEmail4">ตำบล/แขวง</label>
-						      	<select class="form-control" id="tdistrict" name="tdistrict" onchange="choose_zipcode(this);">
+						      	<select class="form-control" id="tdistrict" name="tdistrict">
 										<?php
 												if($_SESSION['tdistrict'] !="" && $_SESSION['tamphur']){;
 													$param_district = array('AMPHUR_ID' => $_SESSION['tamphur']);
@@ -139,12 +138,10 @@
 				</div>
 				<div class="col-12" style="margin-top: 2em; margin-bottom: 2em">
 					<button type="button" class="btn bg_yellow" 
-					onclick="javascript:history.back();"><i class="fas fa-arrow-left"></i> ย้อนกลับ</button>
+					onclick="javascript:backpage_step1();"><i class="fas fa-arrow-left"></i> ย้อนกลับ</button>
 				</div>
 				</div>
 
-				<div class="col-4">
-					<div class="col-12" style="font-weight: bold;">
 					<?php 
 						$summary_price = 0;
 						foreach($_SESSION['cart_id'] as $key=>$value){
@@ -165,33 +162,77 @@
 							$summary_price = $summary_price+$total_price;
 						}
 					?>
+
+				<div class="col-4">		
 					<div class="row">
-						<div class="col-12">รายการชำระเงิน</div>
-					</div>
-					<hr>
-					<div class="row" style="margin-top: 15px;">
-						<div class="col-6">มูลค่าสินค้า</div>
-						<div class="col-6" style="text-align: right;"><?php echo number_format($summary_price);?></div>
-					</div>
-					<div class="row" style="margin-top: 15px;">
-						<div class="col-6">สวนลด</div>
-						<div class="col-6" style="text-align: right;"></div>
-					</div>
-					<!-- <div class="row" style="margin-top: 15px;">
-						<div class="col-6">ค่าจัดส่ง</div>
-						<div class="col-6" style="text-align: right;"></div>
-					</div> -->
-					<hr>
-					<div class="row">
-						<div class="col-6">ยอดรวมทั้งหมด</div>
-						<div class="col-6" style="text-align: right;"><?php echo number_format($summary_price);?></div>
-					</div>
-					<hr>
-					<div class="row" style="text-align: right; margin-top: 35px; margin-bottom: 35px;">
 						<div class="col-12">
-							<button type="submit" class="btn bg_yellow">ดำเนินการต่อ <i class="fas fa-arrow-right"></i></button>
+						<div class="card">
+							<div class="card-header">
+								<strong>วิธีการชำระเงิน</strong>
+							</div>
+							<div class="card-body">
+								<?php								
+									if($summary_price >= 1500){
+										$checked = "";
+								?>
+								<div class="form-check">
+									<input class="form-check-input" type="radio" name="tpayment" id="tpayment1" value="credit_card" checked>
+									<label class="form-check-label" for="tpayment1">
+										บัตรเครดิต <img src="<?php echo URL;?>images/payment-method-footer-725e94b7-min.jpg" style="max-height:22px;">
+									</label>
+								</div>
+								<hr>
+								<?php
+									}else{
+										$checked = "checked";
+									}
+								?>
+								<div class="form-check" style="margin-top:15px;">
+									<input class="form-check-input" type="radio" name="tpayment" id="tpayment2" value="transfer_banking" 
+									<?php echo $checked; ?>>
+									<label class="form-check-label" for="tpayment2">
+										โอนผ่านธนาคาร <img src="<?php echo URL;?>images/kbank.png" style="max-height:20px;">
+									</label>
+								</div>
+							</div>
+						</div>
 						</div>
 					</div>
+
+					<div class="row" style="margin-top:25px;">
+						<div class="col-12">
+							<div class="card">
+								<div class="card-header">
+									<strong>สรุปรายการชำระเงิน</strong>
+								</div>
+								<div class="card-body">
+									<div class="row" style="margin-top: 15px;">
+										<div class="col-6">มูลค่าสินค้า</div>
+										<div class="col-6" style="text-align: right;"><?php echo number_format($summary_price);?></div>
+									</div>
+									<div class="row" style="margin-top: 15px;">
+										<div class="col-6">สวนลด</div>
+										<div class="col-6" style="text-align: right;"></div>
+									</div>
+									<!-- <div class="row" style="margin-top: 15px;">
+										<div class="col-6">ค่าจัดส่ง</div>
+										<div class="col-6" style="text-align: right;"></div>
+									</div> -->
+									<hr>
+									<div class="row">
+										<div class="col-6">ยอดรวมทั้งหมด</div>
+										<div class="col-6" style="text-align: right;"><?php echo number_format($summary_price);?></div>
+									</div>
+									<hr>
+									<div class="row" style="text-align: right; margin-top: 35px; margin-bottom: 35px;">
+										<div class="col-12">
+											<button type="submit" class="btn bg_yellow">ดำเนินการต่อ <i class="fas fa-arrow-right"></i></button>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
 					</div>
 				</div>		
 

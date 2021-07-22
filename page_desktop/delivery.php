@@ -83,6 +83,13 @@
 				        </div>
 				        <div class="col-6"><img src="<?php echo URL_IMG; ?>images/delivery-img3.jpg" style="max-width:100%;"></div>
 				    </div>
+
+
+					<div class="row" style="margin-top:40px; margin-bottom:40px;">
+						<div class="col-12 ucontent">
+							<?php echo $content_2; ?>
+						</div>
+					</div>
 				    <!-- //* จบแก้ไขส่วน Content ได้ -->
 
 
@@ -91,5 +98,16 @@
 		</div>
 	</div>
 </div>
+
+<style>
+    .ucontent ul{
+        margin:0;
+        padding:0;
+    }
+
+    .ucontent ul > li{
+        margin-left : 2rem;
+    }
+</style>
 
 <?php include_once("page_desktop/footer.php");?>

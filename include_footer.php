@@ -22,15 +22,13 @@
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_owl_carousel.css?20210304-2" crossorigin="anonymous">
 
 
-<script src="<?php echo URL; ?>lib/js/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="<?php echo URL; ?>vendor/bootstrap-4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="<?php echo URL; ?>lib/js/popper.min.js" crossorigin="anonymous"></script>
+<script src="<?php echo URL; ?>vendor/bootstrap-4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
+<script defer src="<?php echo URL; ?>vendor/fontawesome-free-5.15.1-web/js/all.js" crossorigin="anonymous"></script>
 
-<script defer src="<?php echo URL; ?>vendor/fontawesome-free-5.15.1-web/js/all.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
-
-<script src="<?php echo URL;?>lib/js/nosave.js" defer></script>
-<script src="<?php echo URL;?>lib/js/function_language.js" defer></script>
+<!-- <script src="<?php //echo URL;?>lib/js/nosave.js" defer></script>
+<script src="<?php //echo URL;?>lib/js/function_language.js" defer></script> -->
 <script src="<?php echo URL;?>lib/js/function.ajax.js"></script>
-
 <!-- <?php
     if($devices == "mobile"){   
         include_once("page_mobile/include_function_mobile.php");
@@ -60,7 +58,7 @@
     $(document).ready(function(){
         var stickyNav = function(){
           var scrollTop = $(window).scrollTop();
-          if(scrollTop > 140){
+          if(scrollTop >= 139){
             $('.sticky-top').css({"box-shadow": "0px 8px 16px 0px rgba(0,0,0,0.2)"});
             $('#py_rowtop').addClass("py_rowtop_scrolling");
             $('#pm_logo').addClass("pm_logo_scrolling");
@@ -80,8 +78,65 @@
       $(window).scroll(function(){
         stickyNav();
       });
-    });
+
+      $("#flogin").submit(function(e){
+        e.preventDefault();
+        //let data = $(this).serialize();
+        //console.log(data);
+        //alert('ยินดีตอนรับเข้าสู่ระบบ');
+        $.ajax({
+          type: "POST",
+          url: "<?php echo URL; ?>login_aed.php",
+          data: $(this).serialize()
+        }).done(function(resp){
+          console.log(resp) 
+          //alert('ยินดีต้อนรับเข้าสู่ระบบ done');
+          // location.reload();
+          //location.reload();
+          if(resp.status == 200){
+            //alert('ยินดีต้อนรับเข้าสู่ระบบ');
+            $(".div_status").toggle();
+            $(".div_status").css("color","green");
+            $(".div_status").html('<i class="fas fa-check"></i> ยินดีต้อนรับเข้าสู่ระบบ');
+            setTimeout(() => {
+              location.reload();
+            }, 500);
+          }else{
+            $(".div_status").toggle();
+            $(".div_status").css("color","red");
+            $(".div_status").html('<i class="fas fa-times"></i> ชื่อผู้ใช้หรือรหัสผ่านผิดค่ะ');
+            //alert('คุณไม่สามารถเข้าระบบได้');
+            setTimeout(() => {
+              $(".div_status").toggle();
+            }, 1000);;
+          } 
+        }).fail(function(resp){
+          // alert('คุณไม่สามารถเข้าระบบได้');
+          console.log(resp)  
+          if(resp.status == 200){
+            //alert('ยินดีต้อนรับเข้าสู่ระบบ');
+            $(".div_status").toggle();
+            $(".div_status").css("color","green");
+            $(".div_status").html('<i class="fas fa-check"></i> ยินดีต้อนรับเข้าสู่ระบบ');
+            setTimeout(() => {
+              location.reload();
+            }, 500);
+          }else{
+            $(".div_status").toggle();
+            $(".div_status").css("color","red");
+            $(".div_status").html('<i class="fas fa-times"></i> ชื่อผู้ใช้หรือรหัสผ่านผิดค่ะ');
+            //alert('คุณไม่สามารถเข้าระบบได้');
+            setTimeout(() => {
+              $(".div_status").toggle();
+            }, 1000);
+          }  
+        })
+      });
+
+    });  
 </script>
+
+
 
 
 <script>

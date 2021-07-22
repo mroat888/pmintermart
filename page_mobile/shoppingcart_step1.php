@@ -124,7 +124,7 @@ action="<?php echo URL; ?>shoppingcart_aed.php?typ=update">
 						<?php
 							}else{
 						?>
-								<a href="<?php echo URL;?>login.php" data-toggle="modal" data-target="#Modallogin">
+								<a href="<?php echo URL;?>member_login.php">
 									<button type="button" class="btn bg_yellow">ดำเนินการต่อ <i class="fas fa-arrow-right"></i></button>
 								</a>
 								

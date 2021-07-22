@@ -131,11 +131,13 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 	</div>
 </div>
 
+<?php include_once("viewModal.php"); ?>
+
 <div class="container-fluid"><?php include_once("footer.php"); ?></div>
 
 </body>
 </html>
-<?php include("include_footer.php"); ?>
+
 
 <script>
 	$(function() {
@@ -146,3 +148,7 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 	    });
 	});
 </script>
+
+
+
+<?php include("include_footer.php"); ?>

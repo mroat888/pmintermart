@@ -31,3 +31,54 @@ RewriteRule ^search/(.*)/([0-9]+)/$ products_search.php?keyword=$1&nowpage=$2
 
 RewriteRule ^tags/(.*)/([0-9]+)/(.*)/$ products_tags.php?tag=$1&nowpage=$2&lang=$3
 RewriteRule ^tags/(.*)/([0-9]+)/$ products_tags.php?tag=$1&nowpage=$2
+
+
+###################################################
+
+<FilesMatch "\.(ico|pdf|jpg|jpeg|png|gif|webp|html|htm|xml|php|txt|xsl|css|min.css|js|min.js)$">
+    Header set Cache-Control "max-age=31536050"
+</FilesMatch>
+
+
+
+<IfModule mod_expires.c>
+  <FilesMatch "\.(jpg|jpeg|gif|png|webp|mp3|flv|mov|avi|3pg|html|htm|swf|js|css)$">
+       ExpiresActive on
+       ExpiresDefault "access plus 1 year"
+   </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <FilesMatch "images/.(jpg|jpeg|gif|png|webp|mp3|flv|mov|avi|3pg|html|htm|swf)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <FilesMatch "banner_slide/.(jpg|jpeg|gif|png|webp)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <FilesMatch "img_product_group/.(jpg|jpeg|gif|png|webp)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+    <FilesMatch "lib/css/.(css|CSS|)$">
+        ExpiresActive on
+        ExpiresDefault "access plus 1 year"
+    </FilesMatch>
+</IfModule>
+
+#<IfModule mod_expires.c>
+#    <FilesMatch "lib/js/.(js|JS|)$">
+#        ExpiresActive on
+#        ExpiresDefault "access plus 1 year"
+#    </FilesMatch>
+#</IfModule>

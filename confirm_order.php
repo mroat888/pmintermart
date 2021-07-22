@@ -13,7 +13,6 @@ $shippingrates = new shippingRates();
 ?>
 
 <?php
-	//$type = $_GET['typ'];
 	$today = date("Y-m-d H:i:s") ;
 
 	//echo $today;
@@ -24,25 +23,7 @@ $shippingrates = new shippingRates();
 		$member_id = 0;
 	}
 
-	// $summary_price = 0;
 
-	// foreach($_SESSION['cart_id'] as $key=>$value){
-	// 	$array_sku = array(':param_sku_id' => $value);
-	// 	$str_sku = "SELECT * FROM product_sku WHERE id = :param_sku_id";
-	// 	$result_sku = $conn->prepare($str_sku);
-	// 	$result_sku->execute($array_sku);
-	// 	$record_sku = $result_sku->fetch(PDO::FETCH_ASSOC);
-
-	// 	$array_product = array(':param_product_id' => $record_sku['id_products_name']);
-	// 	$str_product = "SELECT name FROM product_name WHERE id = :param_product_id";
-	// 	$result_product = $conn->prepare($str_product);
-	// 	$result_product->execute($array_product);
-	// 	$record_product = $result_product->fetch(PDO::FETCH_ASSOC);
-	// 	$product_name = $record_product['name']." ".$record_sku['name'];
-
-	// 	$total_price = $_SESSION['cart_num'][$key]*$record_sku['price'];
-	// 	$summary_price = $summary_price+$total_price;
-	// }
 	$summary_price = 0;
 	$box_weight = 0;
 	$box_w = 0;
@@ -75,16 +56,16 @@ $shippingrates = new shippingRates();
 		$box_l = $box_l+$bl;
 		$box_h = $box_h+$bh;
 	}
+		
 		$shipprice = $shippingrates->shippingPrice($box_w,$box_l,$box_h,$box_weight,$_SESSION['tprovince']);
-		$summary_netprice = $summary_price+$shipprice;
-
+		//$summary_netprice = $summary_price+$shipprice;
 
 		$array_insert_order = array(
 			':param_id_member' => $member_id, 
 			':param_today' => $today,
 			':param_order_discount' => '', 
 			':param_order_shipping' => $shipprice, 
-			':param_summary_price' => $summary_netprice
+			':param_summary_price' => $_SESSION['summary_netprice']
 		);
 	$insert_order = "INSERT INTO order_main 
 	(id_member, order_datetime, order_discount, order_shipping, order_sum_price) 
@@ -179,6 +160,38 @@ $shippingrates = new shippingRates();
 			
 			$mail->Send();
 
+
+			//-- payment ---
+			if(isset($_GET['paym']) && $_GET['paym'] == "credit_card"){
+				$str_order = "SELECT id FROM order_main ORDER BY id DESC LIMIT 0,1";
+				$result_order = $conn->prepare($str_order);
+				$result_order->execute();
+				$record_order = $result_order->fetch(PDO::FETCH_ASSOC);
+
+				$order_payment_array = array(
+					":param_id_order" => $record_order['id'],
+					":param_transfer_amount" => $_SESSION['summary_netprice'],
+					":param_payment_datetime" => $today,
+					":param_payment_methods" => $_GET['paym']
+				);
+
+				$insert_order_payment = "insert into order_payment (id_order, transfer_amount, payment_datetime, payment_methods) 
+				values (:param_id_order, :param_transfer_amount, :param_payment_datetime, :param_payment_methods)";
+
+				$insert_result = $conn->prepare($insert_order_payment);
+				$insert_result->execute($order_payment_array);
+
+				if($insert_result->rowCount()) {
+					$order_main_array = array(
+						":param_id_order" => $record_order['id'], 
+						":param_id_order_process" => "2" 
+					);
+					$update_order_main = "update order_main set id_order_process = :param_id_order_process where id = :param_id_order";
+					$result_ordder_main = $conn->prepare($update_order_main);
+					$result_ordder_main->execute($order_main_array);
+				}
+			}
+
 			unset($_SESSION['cart_id']); 
 			unset($_SESSION['cart_num']); 
 			unset($_SESSION['tname']);
@@ -189,9 +202,10 @@ $shippingrates = new shippingRates();
 			unset($_SESSION['tamphur']);
 			unset($_SESSION['tdistrict']);
 			unset($_SESSION['tzipcode']);
+			unset($_SESSION['summary_netprice']);
 
 			echo "<script language='javascript'>";
-				echo "alert('สั่งซื้อเรียบร้อยแล้วค่ะ');";
+				//echo "alert('สั่งซื้อเรียบร้อยแล้วค่ะ');";
 				echo "window.location.href='".URL."completed.php?id=".$record_order['id']."'";
 			echo "</script>";
 		}else{
@@ -200,6 +214,7 @@ $shippingrates = new shippingRates();
 				echo "window.history.back();";
 			echo "</script>";
 		}
+
 	}catch(Exception $ex){
 		echo $ex->getMessage();
 	}
