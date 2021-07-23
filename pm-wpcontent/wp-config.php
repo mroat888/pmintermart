@@ -25,19 +25,10 @@ $_SERVER['HTTPS'] = 'on';
 define( 'DB_NAME', 'enrhote_pmcontent' );
 
 /** MySQL database username */
-<<<<<<< HEAD
 define( 'DB_USER', 'enrhote_pmcontent' );
 
 /** MySQL database password */
 define( 'DB_PASSWORD', '4wp0iW7L81' );
-=======
-// define( 'DB_USER', 'enrhote_pmcontent' );
-define( 'DB_USER', 'root' );
-
-/** MySQL database password */
-// define( 'DB_PASSWORD', '4wp0iW7L81' );
-define( 'DB_PASSWORD', '' );
->>>>>>> db5a6d8898d2f9f3b594ca252abc4a6409e4a27e
 
 /** MySQL hostname */
 define( 'DB_HOST', 'localhost' );

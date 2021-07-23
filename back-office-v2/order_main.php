@@ -22,7 +22,6 @@
 			</div>
 			<div class="row">
 				<div class="col-12">
-					<button onclick="getAllOrder();">GET</button>
 					<table class="table table-sm table-bordered table-hover">
 						<thead class="thead-dark">
 							<tr>
@@ -56,6 +55,16 @@
 		}).done(function(data){
 			$('#tbody-result').html(data);
 		})
+	};
+	function updateProcess(obj,id){
+		var pcid = document.getElementById(obj).value;
+		$.ajax({
+			type: 'POST',
+			url: 'service/order_main.php',
+		}).done(function(data){
+			$('#tbody-result').html(data);
+		})
+		//console.log(tobj);
 	}
 </script>
 

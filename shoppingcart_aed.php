@@ -107,7 +107,8 @@
 
 		echo "<script language = javascript>" ;
 			//echo "alert('ลบสินค้าในตะกร้าเรียบร้อยแล้ว');" ;
-			echo "window.history.back()" ;
+			//echo "window.history.back()" ;
+			echo "window.location.href='shoppingcart_step1.php';";
 		echo "</script>" ;
 	}
 ?>

@@ -171,22 +171,31 @@
 								<strong>วิธีการชำระเงิน</strong>
 							</div>
 							<div class="card-body">
+								<div class="form-check">
 								<?php								
 									if($summary_price >= 1500){
 										$checked = "";
 								?>
-								<div class="form-check">
 									<input class="form-check-input" type="radio" name="tpayment" id="tpayment1" value="credit_card" checked>
 									<label class="form-check-label" for="tpayment1">
 										บัตรเครดิต <img src="<?php echo URL;?>images/payment-method-footer-725e94b7-min.jpg" style="max-height:22px;">
 									</label>
-								</div>
-								<hr>
+								
 								<?php
 									}else{
+								?>
+									<input class="form-check-input" type="radio" name="tpayment" id="tpayment1" value="credit_card" disabled>
+									<label class="form-check-label" for="tpayment1">
+										บัตรเครดิต <img src="<?php echo URL;?>images/payment-method-footer-725e94b7-min.jpg" style="max-height:22px;">
+										<span style="display:block; font-size:0.8em;">*สงวนสิทธิ์สำหรับยอดสั่งซื้อตั้งแต่ 1500 บาทขึ้นไป</span>
+									</label>
+									<hr>
+								<?php
 										$checked = "checked";
 									}
 								?>
+								</div>
+								<hr>
 								<div class="form-check" style="margin-top:15px;">
 									<input class="form-check-input" type="radio" name="tpayment" id="tpayment2" value="transfer_banking" 
 									<?php echo $checked; ?>>

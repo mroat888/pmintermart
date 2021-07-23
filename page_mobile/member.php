@@ -4,7 +4,7 @@
 </script>
 
 <?php
-	if(isset($_GET['id']) && $_GET['id'] > 0){
+	if(isset($_SESSION['memid']) && $_SESSION['memid'] != ""){
 		$action_save = URL."register_aed.php?typ=edit";
 	}else{
 		$action_save = URL."register_aed.php?typ=add";

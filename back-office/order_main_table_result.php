@@ -138,15 +138,19 @@
 				$str_order_payment = "SELECT * FROM order_payment WHERE id_order = :param_id_order";
 				$result_order_payment = $conn->prepare($str_order_payment);
 				$result_order_payment->execute($array_order_payment);
-				$count_check = $result_order_payment->rowcount();
-				if($count_check){
+				$record_order_payment = $result_order_payment->fetch(PDO::FETCH_ASSOC);
+				if($record_order_payment['payment_slip'] != ""){	
+					if(file_exists("../payment_slip/".$record_order_payment['payment_slip'])) {
+						$payment_slip_img = URL."payment_slip/".$record_order_payment['payment_slip'];
 			?>
-					<a href="javascript:void(0)" class="text_link_white view_modal" data-dismiss="modal" 
-					id ="<?=$record_order_main['id']?>"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span></a>&nbsp;&nbsp;
+						<a href="<?php echo $payment_slip_img; ?>" target="_blank" class="text_link_white">
+							<span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+						</a>&nbsp;&nbsp;
 			<?php
+					}
 				}
 			?>
-			<!-- <button type="button" name="view_modal" class="btn btn-primary view_modal" data-dismiss="modal" id ="<?=$record_order_main['id']?>">View</button> -->
+
 			<a href="<?php echo URL; ?>order_display.php?id=<?=$record_order_main['id']?>" target="_blank" class="text_link_white"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></a>
 		</td>
 	</tr>

@@ -191,8 +191,3 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 	);
 //]]>
 </script>
-
-
-
-</body>
-</html>

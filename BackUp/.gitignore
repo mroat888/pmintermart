@@ -1,0 +1,13 @@
+/wordpress/*
+/wp-content/*
+/PDS-AI/*
+/testRedirectTreepayPhp/*
+*.jpg
+*.gif
+*.png
+*.gif
+*.mp4
+*.pdf
+*.psd
+*.ai
+*.zip

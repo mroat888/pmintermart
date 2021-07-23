@@ -1,8 +1,8 @@
 <?php require("include_header.php"); ?>
 
 <?php
-    if(isset($_GET['id']) && $_GET['id'] > 0){
-        $id = $_GET['id'];
+    if(isset($_SESSION['memid']) && $_SESSION['memid'] != ""){
+        $id = $_SESSION['memid'];
     }else{
         $id = "";
     }

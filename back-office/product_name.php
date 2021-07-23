@@ -95,8 +95,6 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 
 <div class="container-fluid"><?php include_once("footer.php"); ?></div>
 
-</body>
-</html>
 <?php include("include_footer.php"); ?>
 
 <script>
@@ -108,3 +106,5 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 	    });
 	});
 </script>
+
+<?php include("include_footer.php"); ?>

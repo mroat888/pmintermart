@@ -23,9 +23,9 @@
 				</div>
 				<div class="col-3" style="text-align: center;">
 					<img src="<?php echo URL_IMG;?>images/PM-LOGO.jpg" style="max-height: 100%;" >
-					<div style="margin-top: 2em;">
+					<div style="margin-top: 1em;">
 						<p style="font-size: 1.2em;">	
-							"ผลิตภัณฑ์นวัตกรรมนำสมัย<br>เพื่อชีวิตที่สะดวกสบายขึ้น"
+							"นวัตกรรมผลิตภัณฑ์นำสมัย<br>เพื่อชีวิตที่สะดวกสบายขึ้น"
 						</p>
 					</div>
 				</div>

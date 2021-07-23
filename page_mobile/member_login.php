@@ -2,7 +2,16 @@
 <script>
     /*document.getElementById("myDropdown").classList.toggle("show");*/
 </script>
-
+<?php
+	if(!empty($_SESSION['memid']) && isset($_SESSION['memid']) && $_SESSION['memid'] !=""){
+		$home_url = URL;
+		// header('Location: $home_url');
+		//exit;
+		echo "<script>
+			window.location.href='$home_url';
+		</script>";
+	}
+?>
 <div class="container-fluid">
 	<div class="row">
 		<div class="container">

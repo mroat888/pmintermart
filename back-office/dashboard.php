@@ -53,8 +53,7 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 	</div>
 </div>
 
+<?php include("include_footer.php"); ?>
+
 <div class="container-fluid"><?php include_once("footer.php"); ?></div>
 
-</body>
-</html>
-<?php include("include_footer.php"); ?>
