@@ -23,7 +23,6 @@
 						<?php
                             $array_param_product_name = array(
                                 ':param_type3_id' => $typ3, 
-                                ':param_price' => '0', 
                                 ':param_drop_status' => 'N'
                             );
                             $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
@@ -32,7 +31,6 @@
                             where product_sku.id_products_name = product_name.id and 
                             product_name.is_drop = :param_drop_status and 
                             product_sku.is_drop = :param_drop_status and 
-                            product_sku.price > :param_price and 
                             product_name.id_producttype_level3 = :param_type3_id ";
                         
                             $str_orderby = "order by product_sku.full_price , product_name.name , product_name.id desc";

@@ -79,7 +79,6 @@
 						<?php
                             $array_param_product_name = array(
                                 ':param_type2_id' => $typ2, 
-                                ':param_price' => '0', 
                                 ':param_drop_status' => 'N'
                             );
                             if($check_lv){
@@ -90,7 +89,6 @@
                                 (product_name.id_producttype_level3 = producttype_level3.id) and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
-                                product_sku.price > :param_price and 
                                 product_name.id_producttype_level2 = :param_type2_id "; 
                                 $str_orderby = "order by producttype_level3.name , product_sku.full_price , product_name.name , product_name.id desc";
                             }else{
@@ -100,7 +98,6 @@
                                 where product_sku.id_products_name = product_name.id and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
-                                product_sku.price > :param_price and 
                                 product_name.id_producttype_level2 = :param_type2_id ";   
                                 $str_orderby = "order by product_sku.full_price , product_name.name , product_name.id desc";
                             }

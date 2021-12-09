@@ -85,9 +85,9 @@
 			e.preventDefault();
 			$.ajax({
 				type: "POST",
-				url: "service/login.php",
+				url: "inc/cus_login.php",
 				data: $(this).serialize()
-			}).done(function(resp){
+			}).done(function(resp){ 
 				$(".div_status").toggle();
 				$(".div_status").css("background-color","green");
 				$(".div_status").text("ยินดีต้อนรับเข้าสู่ระบบ");
@@ -102,6 +102,8 @@
 					$(".div_status").toggle();
 				}, 1500);
 			})
+            
+
 		});
 	 });
 </script>
