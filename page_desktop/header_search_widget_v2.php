@@ -28,13 +28,13 @@
 					<?php
 						if(isset($_SESSION['memid']) && $_SESSION['memid'] != ""){
 					?>
-							<a href="javascript:div_member_menu()">
-								<i class="fas fa-user font_blue" style="font-size: 1.8em;"></i></a>
+							<!-- <a href="javascript:div_member_menu()">
+								<i class="fas fa-user font_blue" style="font-size: 1.8em;"></i></a> -->
 					<?php
 						}else{
 					?>
-							<a href="" data-toggle="modal" data-target="#Modallogin">
-								<i class="fas fa-user font_blue" style="font-size: 1.8em;"></i></a>
+							<!-- <a href="" data-toggle="modal" data-target="#Modallogin">
+								<i class="fas fa-user font_blue" style="font-size: 1.8em;"></i></a> -->
 					<?php
 						}
 					?>
@@ -48,13 +48,13 @@
 							$iscart_url = "javascript:void(0)";
 						}
 					?>
-					<a href="<?php echo $iscart_url;?>">
+					<!-- <a href="<?php echo $iscart_url;?>">
 						<span class="badge badge-light " 
 						style="position: absolute; top:-10px; right:15px; background-color: #ffd21d">
 						<?php echo $iscart; ?>
 						</span>
 						<i class="fas fa-shopping-cart font_blue" style="font-size: 1.8em;"></i>
-					</a>
+					</a> -->
 				</div>
 				<div id="div_member" class="div_member">
 					<ul class="menu_dropdown_content">

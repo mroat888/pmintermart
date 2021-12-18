@@ -64,10 +64,10 @@
                         <div class="col-12" style="margin-top:2em;">
                             <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ช่วยเหลือและสนับสนุน</h4>
                             <!-- <a href="<?php echo URL."products_hotsale.php"?>" class="font_gray">โปรโมชั่น</a><br> -->
-                            <a href="<?php echo URL;?>howtopay.php" class="font_gray">วิธีการชำระเงิน</a><br>
+                            <!-- <a href="<?php echo URL;?>howtopay.php" class="font_gray">วิธีการชำระเงิน</a><br> -->
                             <a href="<?php echo URL;?>delivery.php" class="font_gray">การจัดส่งและเงื่อนไข</a><br>
                             <a href="<?php echo URL;?>terms_and_condition.php"class="font_gray">ข้อตกลงและเงื่อนไข</a><br>
-                            <a href="<?php echo URL;?>return_and_refund.php"class="font_gray">การคืนสินค้า/การคืนเงิน/ยกเลิกการซื้อ</a><br>
+                            <!-- <a href="<?php echo URL;?>return_and_refund.php"class="font_gray">การคืนสินค้า/การคืนเงิน/ยกเลิกการซื้อ</a><br> -->
                             <a href="<?php echo URL;?>privacy_policies.php" class="font_gray">นโยบายความเป็นส่วนตัว</a><br>
                             <a href="<?php echo URL;?>cookie_policy.php" class="font_gray">นโยบายการใช้คุกกี้</a><br>
                         </div>

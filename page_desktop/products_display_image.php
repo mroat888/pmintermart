@@ -6,16 +6,16 @@
 		$second_img = URL_IMG.FOLDER_SKU."/".$record_sku['sku_code']."__2.jpg";
 	?>
     <?php
-            if($record_sku['instock'] <= 0){
-                    $filter = "filter: grayscale(100%);";
+            // if($record_sku['instock'] <= 0){
+            //         $filter = "filter: grayscale(100%);";
     ?>
-            <div class="div-outstock">
+            <!-- <div class="div-outstock">
                     สินค้าหมด
-            </div>
+            </div> -->
     <?php
-                }else{
-                    $filter = "";
-                }
+                // }else{
+                //     $filter = "";
+                // }
     ?>
     <img id="image_product" src="<?php echo $first_img; ?>" style="max-width:100%;" alt="<?php echo $record_products['name']; ?>" draggable="false">
 </div>

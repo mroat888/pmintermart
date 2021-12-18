@@ -9,7 +9,7 @@
 	$str = "SELECT id, product_code, name, is_drop FROM product_name WHERE ";
 
 	 if($tsearch !=""){
-	 	$param_search_array['tkeyword'] = "%".$tsearch."%";;
+	 	$param_search_array['tkeyword'] = "%".$tsearch."%";
 	 	$where[] = "(product_code LIKE :tkeyword or name LIKE :tkeyword or detail LIKE :tkeyword) and ";
 	 }
 
@@ -31,13 +31,16 @@
 	}
 
 
-	$pagesize = 20 ;
-	$pagestart = ($nowpage-1)*$pagesize;
-	$str_final = $_SESSION['ss_str']." LIMIT ".$pagestart.", ".$pagesize;
+	// $pagesize = 20 ;
+	// $pagestart = ($nowpage-1)*$pagesize;
+	// $str_final = $_SESSION['ss_str']." LIMIT ".$pagestart.", ".$pagesize;
+	$str_1 = "SELECT id, product_code, name, is_drop FROM product_name";
+	$_SESSION['ss_str'] = $str;
+	$str_final = $_SESSION['ss_str'];
 
 	//echo $str_final;
 
-	$result = $conn->prepare($str_final);
+	$result = $conn->prepare($str_1);
 	$result->execute($_SESSION['ss_param']);
 
 ?>

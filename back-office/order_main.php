@@ -61,7 +61,7 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 									<div class="col-md-2">
 										<div class="col-md-12">
 											<div class="form-group">
-												<input type="text" class="form-control datepicker" id="date_start" 
+												<input type="date" class="form-control datepicker" id="date_start" 
 											    name= "date_start"  placeholder="วันที่เริ่ม">
 										  	</div>
 										</div>
@@ -69,7 +69,7 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 									<div class="col-md-2">
 										<div class="col-md-12">
 											<div class="form-group">
-												<input type="text" class="form-control datepicker" id="date_end" 
+												<input type="date" class="form-control datepicker" id="date_end" 
 											    name= "date_end"  placeholder="วันที่สิ้นสุด">
 										  	</div>
 										</div>

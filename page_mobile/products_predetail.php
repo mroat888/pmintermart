@@ -83,16 +83,16 @@
    				onmouseout="this.src='<?php echo $first_img; ?>'">
 		</a>
 		<?php
-				if($record_product_name['instock'] <= 0){
-					$filter = "filter: grayscale(100%);";
+				// if($record_product_name['instock'] <= 0){
+				// 	$filter = "filter: grayscale(100%);"; 
 		?>
-			<div class="div-outstock">
+			<!-- <div class="div-outstock">
 					จองสินค้าผ่านไลน์
-			</div>
+			</div> -->
 		<?php
-				}else{
-					$filter = "";
-				}
+				// }else{
+				// 	$filter = "";
+				// }
 		?>
 	</div>
 

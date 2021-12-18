@@ -55,7 +55,7 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 			<div class="my-col-right" >
 				<div id="div_dasboard_detail" class="div_dasboard_detail">
 				<form name="fproduct" id="fproduct" class="form-horizontal" method="post" 
-				enctype="multipart/form-data" data-toggle="validator" role="form">
+				enctype="multipart/form-data" data-toggle="validator" role="form" action="product_name_aed.php">
 					
 					<div class="col-md-12">
 						<div class="row">
@@ -129,12 +129,12 @@ if(!isset($_SESSION['ss_accountid']) || $_SESSION['ss_accountid'] =="" || $_SESS
 									</div>
 									<div class="form-group">
 										<label for="tname" class="control-label">รหัสสินค้า</label>
-										<input type="text" class="form-control" id="tname_en" name="tname_en" 
+										<input type="text" class="form-control" id="tproduct_code" name="tproduct_code" 
 										value = "<?php echo $record_product['product_code']; ?>" placeholder="ระเภททรัพย์ (En)">
 									</div>
 									<div class="form-group">
 										<label for="tname" class="control-label">ชื่อสินค้า</label>
-										<input type="text" class="form-control" id="tname_en" name="tname_en" 
+										<input type="text" class="form-control" id="tname" name="tname" 
 										value = "<?php echo $record_product['name']; ?>" placeholder="ระเภททรัพย์ (En)">
 									</div>
 								</div>

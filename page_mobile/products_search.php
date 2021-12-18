@@ -19,31 +19,8 @@
 						</div>
 					</div>
 					<div class="row">
-						<?php
-                            $array_param_product_name = array(
-                                ':param_tkeyword' => "%".$keyword."%", 
-                                ':param_drop_status' => 'N'
-                            );
-                            $str_product_name = "select id, product_code, name from product_name 
-                            where (product_code LIKE :param_tkeyword or name LIKE :param_tkeyword or detail LIKE :param_tkeyword) and (is_drop = :param_drop_status)";
-                        
-                            $str_orderby = "order by id desc";
-                            $str_product_name = $str_product_name.$str_orderby;
-                        
-                            if(isset($_GET['nowpage'])){ ///--
-                                $nowpage = $_GET['nowpage'];
-                            }else{
-                                $nowpage = 1;
-                            }
-                        
-                            $pagesize = 21;
-                            $pagestart = ($nowpage-1)*$pagesize;
-                        
-                            $str_final = $str_product_name." LIMIT $pagestart, $pagesize";
-                            $result_product_name = $conn->prepare($str_final);
-                            $result_product_name->execute($array_param_product_name);
-                        ?>
                         <?php 
+                            // $result_product_name มาจากหน้ารวม products_search  (ใช้รวมกัน)
                             while($record_product_name = $result_product_name->fetch(PDO::FETCH_ASSOC)){ 
                                 $array_sku = array(
                                      ':param_product_id' => $record_product_name['id'],

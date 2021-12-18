@@ -23,13 +23,13 @@
 							<h1><?php echo $product_name; ?></h1>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 0.9375em;">
+					<!-- <div class="row" style="margin-top: 0.9375em;">
 						<div class="col-12">
 							<span style="font-size: 1.75em; color: #FF0000;">
-								<strong>ราคา <?php echo number_format($record_sku['price']); ?> THB.</strong>
+								 <strong>ราคา <?php echo number_format($record_sku['price']); ?> THB.</strong>
 							</span>
 						</div>
-					</div>
+					</div> -->
 					<div class="row" style="margin-top: 0.9375em;">
 						<div class="col-12">
 							<p>
@@ -41,7 +41,7 @@
 						</div>
 					</div>
 
-						<form class="form-inline" name="form1" method="post" enctype="multipart/form-data" action="<?php echo URL;?>shoppingcart_aed.php?typ=add">
+						<!-- <form class="form-inline" name="form1" method="post" enctype="multipart/form-data" action="<?php echo URL;?>shoppingcart_aed.php?typ=add">
 						<div class="row" style="margin-top: 0.9375em;">
 							<div class="col-12" style="text-align: left;">
 							<?php
@@ -67,10 +67,10 @@
 										//$permalink = URL."products_display.php?id=".$record_selectsku['id'];
 										$permalink = URL."product/".$record_selectsku['id']."/".$record_selectsku['name']."/";
 									?>
-	                               	<!-- <input type="radio" name="radio_sku_id" style="margin-right:20px;" 
+	                               	<input type="radio" name="radio_sku_id" style="margin-right:20px;" 
 	                               	value="<?php //echo $record_selectsku['id']; ?>" required="required" 
 	                               	<?php //echo $redio_checked;?> onclick="setStock(<?php //echo $instock?>);" 
-									data-stock="<?php //echo $instock?>"> -->
+									data-stock="<?php //echo $instock?>">
 									<input type="radio" name="radio_sku_id" style="margin-right:20px;" 
 									value="<?php echo $record_selectsku['id']; ?>" required="required" 
 									<?php echo $redio_checked;?> onclick="openpage('<?=$permalink;?>');" 
@@ -78,10 +78,10 @@
 										<a href="<?php echo $permalink; ?>"><img src="<?php echo URL_IMG."img_product_sku/".$record_selectsku['sku_code']."__1.jpg"; ?>" 
 									   	style="width:50px;" alt="<?php echo $record_products['name']; ?>" draggable="false"></a>
 
-									<span><?=$record_selectsku['name'];?></span>
+									<span><?=$record_selectsku['name'];?></span> 
 									&nbsp;&nbsp;&nbsp;
-									<?php echo $stock_status;?>
-	                            </div>
+									<?php echo $stock_status;?> 
+	                            </div>-->
 	                               	
 							<?php
 									}else{
@@ -94,7 +94,7 @@
 							?>
 							</div>
 							<div class="col-12" style="margin-top:1.25em;"> 
-								<button type="button" class="qty-minus btn btn-outline-dark" data-package="1">
+								<!-- <button type="button" class="qty-minus btn btn-outline-dark" data-package="1">
 									<i class="fas fa-minus"></i>
 								</button>
 								<input type="text" id="sel_quantity" name="sel_quantity" 
@@ -102,7 +102,7 @@
 								<button type="button" id="qty-plus" class="qty-plus btn btn-outline-dark" data-package="1" data-stock="<?=$instock?>">
 									<i class="fas fa-plus"></i>
 								</button>
-								<span id="choiceLabel"></span>
+								<span id="choiceLabel"></span> -->
 	                    	</div>
 	                    	<div class="col-12" style="margin-top:1.25em;"> 
 	                    		<?php
@@ -121,13 +121,13 @@
 	                    			}
 									if($record_sku['instock'] > 0){
 								?>
-										<button type="submit" class="btn bg_yellow" <?php echo $btn_disabled;?>>Add To Cart</button>
+									<!-- <button type="submit" class="btn bg_yellow" <?php echo $btn_disabled; ?>>Add To Cart</button> -->
 								<?php
 									}else{
 								?>
-										<button type="button" class="btn btn-success" 
+									<!-- <button type="button" class="btn btn-success" 
 									onclick="javascript:window.open('https://page.line.me/pmintermart', '_blank');">
-									<i class="fab fa-line"></i> จองสินค้าผ่านไลน์</button>
+									<i class="fab fa-line"></i> จองสินค้าผ่านไลน์</button> -->
 									
 								<?php
 									}
