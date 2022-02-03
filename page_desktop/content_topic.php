@@ -42,5 +42,12 @@
     </div>
 </div>
 
+<style>
+    .wp_content img{
+        max-width:100%;
+        max-height:100%;
+    }
+</style>
+
 	
 <?php include_once("page_desktop/footer.php"); ?>

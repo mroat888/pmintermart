@@ -104,11 +104,11 @@
 		<p class="card-text">
 	    	<span style="font-size: 0.8em; color: #888;">รหัสสินค้า : <?php echo $product_code;?></span>
 	    </p>
-	    <p class="card-text" style="height: 4em;">
+	    <!-- <p class="card-text" style="height: 4em;">
 	    	<span style="font-size: 1.8em; font-weight: bold; color: #333;"><?php echo $price;?></span>
 	    	<br>
 	    	<span style="font-size: 0.9em;"><?php echo $full_price; ?></span>
-	    </p>
+	    </p> -->
 	</div>
 	</a>
 </div>

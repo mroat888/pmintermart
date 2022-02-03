@@ -47,12 +47,14 @@
 </head>
 <body itemscope itemtype="http://schema.org/WebPage"> 
 
-<?php   if($devices == "mobile"){   ?>
-            <div><?php include_once("page_mobile/content_topic.php"); ?></div>
+<?php include_once("page_desktop/content_topic.php"); ?>
+
+<?php   //if($devices == "mobile"){   ?>
+            <div><?php //include_once("page_mobile/content_topic.php"); ?></div>
 <?php   
-        }else{     
+        //}else{     
 ?>
-            <div><?php include_once("page_desktop/content_topic.php"); ?></div>
-<?php   }   ?>
+            <div><?php //include_once("page_desktop/content_topic.php"); ?></div>
+<?php   //}   ?>
 
 <?php require("include_footer.php"); ?>

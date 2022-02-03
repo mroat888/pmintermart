@@ -47,9 +47,9 @@
 					</div>
 					<div class="row" style="margin-top: 10px;">
 						<div class="col-12">
-							<span style="font-size: 28px; color: #FF0000;">
+							<!-- <span style="font-size: 28px; color: #FF0000;">
 								<strong>ราคา <?php echo number_format($record_sku['price']); ?> THB.</strong>
-							</span>
+							</span> -->
 						</div>
 					</div>
 					<!-- <div class="row" style="margin-top: 15px;">

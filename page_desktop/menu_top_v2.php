@@ -25,7 +25,7 @@
 						);
 								$str_type_lv2 = "select id, name, name_en from producttype_level2 
 								where status = :param_status and id_producttype_level1 = :param_type_lv1 
-								order by name";
+								order by ordinal_number , name";
 								$result_type_lv2 = $conn->prepare($str_type_lv2);
 								$result_type_lv2->execute($array_type_lv2);
 								$count_close = $result_type_lv2->rowCount();
@@ -167,8 +167,8 @@
 		list-style: none;
 		color: #FFFFFF;
 		padding: 0.8em;
-		padding-right: 1.2em;
-		padding-left: 1.2em;
+		padding-right: 1em;
+		padding-left: 1em;
 		margin: 0px;
 	}
 

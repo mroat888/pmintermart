@@ -2,11 +2,11 @@
 	<div class="row">
 		<div class="container">
 			<div class="row">
-				<div class="col-10">
+				<div class="col-md-10 col-sm-12">
 					<h2>PM Blog</h2>
 					<p style="font-size: 0.9em; color: #666; margin-top: -0.5em;">อัพเดทข่าวสาร บทความไลฟ์สไตล์ ตอบโจทย์ทุกไลฟ์สไตล์การใช้ชีวิต</p>
 				</div>
-				<div class="col-2" style="text-align: right; line-height: 5em;">
+				<div class="col-md-2 col-sm-12" style="text-align: right; line-height: 5em;">
 					<a href="<?php echo URL;?>content.php">ดูบทความทั้งหมด</a>
 				</div>
 			</div>
@@ -39,7 +39,7 @@
                     $image_path = $record_wp_posts_img['guid'];
                     $image_alt = $record_wp_posts_img['post_title'];
             ?>
-                <div class="col-3">
+                <div class="col-md-3 col-6">
                 	<div class="row">
                 		<div class="col-12">
                 			<a href="<?php echo $link_url; ?>">

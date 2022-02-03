@@ -21,7 +21,7 @@
 				<div class="col-9 offset-3">
 					<h2>Who We Are</h2>
 				</div>
-				<div class="col-3" style="text-align: center;">
+				<div class="col-md-3 col-12" style="text-align: center;">
 					<img src="<?php echo URL_IMG;?>images/PM-LOGO.jpg" style="max-height: 100%;" >
 					<div style="margin-top: 1em;">
 						<p style="font-size: 1.2em;">	
@@ -29,7 +29,7 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-9">
+				<div class="col-md-9 col-12">
 					<p>
 						ด้วยวิสัยทัศน์และความเชี่ยวชาญของผู้บริหารและทีมงาน บริษัท พีเอ็ม อินเตอร์มาร์ท จำกัด เราไม่หยุดที่จะสรรหาผลิตภัณฑ์ใหม่ๆ<br>เพื่อตอบสนองความต้องการลูกค้า B2C B2B B2G มุ่งเน้นประโยชน์การใช้สอยผลิตภัณฑ์ทันสมัย คงทน สวยงาม ปลอดภัย<br>
 						แตกต่างจากสินค้าท้องตลาดทั่วไป

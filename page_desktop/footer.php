@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
+                <div class="col-md-3">
                     <p><i class="fas fa-map-marker-alt"></i>&nbsp;<?php echo $footer_box2_1 ;?></p>
                     <p>
                         <i class="fas fa-clock"></i>&nbsp;เวลาทำการ วันจันทร์ - ศุกร์<br>
@@ -54,12 +54,14 @@
                         <i class="fas fa-envelope"></i>&nbsp;<a href="mailto:contact.pmintermart@gmail.com" class="font_gray">contact.pmintermart@gmail.com</a>
                     </p>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="row">
                         <div class="col-12">
                             <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ข้อมูลเพิ่มเติม</h4>
                             <a href="<?php echo URL;?>about.php" class="font_gray">เกี่ยวกับเรา</a><br>
+                            <a href="<?php echo URL;?>client.php" class="font_gray">ลูกค้าของเรา</a><br>
                             <a href="<?php echo URL;?>content.php" class="font_gray">บล๊อก</a><br>
+                            <a href="<?php echo URL;?>contactus.php" class="font_gray">ติดต่อเรา</a><br>
                         </div>
                         <div class="col-12" style="margin-top:2em;">
                             <h4 class="font_header" style="font-size:20px; font-weight: 500; color: #333;">ช่วยเหลือและสนับสนุน</h4>
@@ -73,7 +75,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class="row">
                         <div class="col-12" style="font-size: 1.5em;">
                             <h4 class="font_header font_blue" style="font-size:20px; font-weight: 500; color: #333;">ติดตามเราได้ที่</h4>
@@ -98,10 +100,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-3">
+                <div class="col-md-3">
                     <div class = "row">
-                        <div class="col-12">
-                            <h4 class="font_header font_blue" style="font-size:20px; font-weight: 500; color: #333;">จดหมายข่าว</h4>
+                        <div class="col-12" style="text-align:center;">
+                            <!-- <h4 class="font_header font_blue" style="font-size:20px; font-weight: 500; color: #333;">จดหมายข่าว</h4>
                             <p>สมัครรับข่าวสารและโปรโมชั่นสุดพิเศษทางอีเมล์ได้จาก PM INTERMART ได้แล้ววันนี้</p>
                             <form name="form1" method="get" action="<?=URL?>products_search.php">
                                 <div class="input-group" >
@@ -113,7 +115,15 @@
                                         สมัคร
                                     </button>
                                 </div>
-                            </form>
+                            </form> -->
+
+                            <img src="<?php echo URL_IMG;?>images/PM-LOGO.jpg" style="max-height: 50%;" >
+                            <div style="margin-top: 1em;">
+                                <p style="font-size: 1.2em;">	
+                                    "นวัตกรรมผลิตภัณฑ์นำสมัย<br>เพื่อชีวิตที่สะดวกสบายขึ้น"
+                                </p>
+                            </div>
+
                         </div>
                     </div>
 

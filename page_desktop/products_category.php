@@ -53,7 +53,7 @@
                         <?php 
                             while($record_product_name = $result_product_name->fetch(PDO::FETCH_ASSOC)){ 
                         ?>
-                                <div class="col-3">
+                                <div class="col-md-3 col-6">
                                     <?php include("page_desktop/products_predetail.php");?>
                                 </div>
                         <?php
@@ -61,10 +61,10 @@
                             flush();
                         ?>
 					</div>
-                    <div class="row">
+                    <div class="">
                         <?php 
-                            //$get_pagination = "category/".$typ3."/".$type3_name."/";
-                            //include_once("products_pagination.php"); 
+                            $get_pagination = "category/".$typ3."/".$type3_name."/";
+                            include_once("products_pagination.php"); 
                         ?>
                     </div>
 				</div>

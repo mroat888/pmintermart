@@ -60,7 +60,9 @@
                                     $header_type_text_widget = $record_producttype_level2['name'];
                                 }
                         ?>
-                            <div class="<?=$class_col?>" style="padding:0.2em; padding-right: 0.2em; padding-top: 0.5em; padding-bottom: 0.8em;">
+                            
+                            <!-- <div class="<?=$class_col?>" style="padding:0.2em; padding-right: 0.2em; padding-top: 0.5em; padding-bottom: 0.8em;"> -->
+                            <div class="<?=$class_col?>" style="padding:0.5em; ">
                                 <a href="<?php echo $permalink; ?>">
                                     <div class="header_type_text_widget">
                                         <?php echo $header_type_text_widget?>
@@ -78,6 +80,7 @@
                         ?>
                     </div>
 					<div class="row">
+
 						<?php
                             $array_param_product_name = array(
                                 ':param_type1_id' => $typ1, 
@@ -137,15 +140,16 @@
                         <?php 
                             while($record_product_name = $result_product_name->fetch(PDO::FETCH_ASSOC)){ 
                         ?>
-                                <div class="col-3">
+                                <div class="col-md-3 col-6">
                                     <?php include("page_desktop/products_predetail.php");?>
                                 </div>
                         <?php 
                             } 
                             flush();
                         ?>
+
 					</div>
-                    <div class="row">
+                    <div class="">
                         <?php 
                             $get_pagination = "group/".$typ1."/".$type1_name."/";
                             include_once("products_pagination.php"); 

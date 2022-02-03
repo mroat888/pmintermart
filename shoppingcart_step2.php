@@ -9,7 +9,7 @@
 </script>	
 
     <title>ตระกร้าสินค้า</title>
-    <meta name="description" content="<?php echo $mata_description; ?>" />
+    <!-- <meta name="description" content="<?php echo $mata_description; ?>" /> -->
     <link rel="canonical" href="<?php echo $canonical_page;?>" />
 
 </head>

@@ -10,17 +10,18 @@
 
     <title>เกี่ยวกับ PM INTERMART</title>
     
-    <meta name="description" content="ของใช้ในโรงแรม จำหน่ายปลีก-ส่ง อุปกรณ์ของใช้โรงแรมครบวงจร สินค้าโรงแรม ของใช้ในห้องพัก สินค้าพื้นที่ส่วนกลาง ของใช้ในห้องน้ำ อเมนิตี้ รถเข็นโรงแรม ป้ายแขวนประตู ไดร์เป่าผมติดผนัง ตู้เย็นโรงแรม กระจกส่องหน้า รองเท้าสลิปเปอร์" />
+    <meta name="description" content="ศูนย์รวมผลิตภัณฑ์ เครื่องใช้ไฟฟ้าและของใช้ในบ้าน คุณภาพเกรดโรงแรม จำหน่ายปลีก-ส่ง อุปกรณ์ของใช้ เครื่องใช้ไฟฟ้า ของใช้ในห้องพัก สินค้าพื้นที่ส่วนกลาง ของใช้ในห้องน้ำ อเมนิตี้ รถเข็นโรงแรม ป้ายแขวนประตู ไดร์เป่าผมติดผนัง ตู้เย็นโรงแรม กระจกส่องหน้า รองเท้าสลิปเปอร์" />
     <link rel="canonical" href="<?php echo $canonical_page;?>" />
 </head>
 <body itemscope itemtype="http://schema.org/WebPage"> 
 
-<?php   if($devices == "mobile"){   ?>
-            <div><?php include_once("page_mobile/about.php"); ?></div>
+
+<?php   //if($devices == "mobile"){   ?>
+            <div><?php //include_once("page_mobile/about.php"); ?></div>
 <?php   
-        }else{     
+        //}else{     
 ?>
             <div><?php include_once("page_desktop/about.php"); ?></div>
-<?php   }   ?>
+<?php   //}   ?>
 
 <?php require("include_footer.php"); ?>

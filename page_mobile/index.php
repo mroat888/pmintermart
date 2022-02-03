@@ -2,7 +2,7 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="">
-            <?php include_once("page_desktop/banner_slide_isonline.php"); ?>
+            <?php //include_once("page_desktop/banner_slide_isonline.php"); ?>
 		</div>
 	</div>
 	<div class="row">

@@ -31,7 +31,7 @@
                     $image_path = $record_wp_posts_img['guid'];
                     $image_alt = $record_wp_posts_img['post_title'];
             ?>
-                <div class="col-3" style="margin-top:2em; margin-bottom:1em;">
+                <div class="col-md-3 col-6" style="margin-top:2em; margin-bottom:1em;">
                 	<div class="row">
                 		<div class="col-12">
                 			<a href="<?php echo $link_url; ?>">

@@ -10,7 +10,7 @@
 ?>
 
     <title>ประวัติการสั่งซื้อ</title>
-    <meta name="description" content="<?php echo $mata_description; ?>" />
+    <!-- <meta name="description" content="<?php echo $mata_description; ?>" /> -->
     <link rel="canonical" href="<?php echo $canonical_page;?>" />
 
 </head>

@@ -15,13 +15,15 @@
 </head>
 <body itemscope itemtype="http://schema.org/WebPage"> 
 
-<?php   if($devices == "mobile"){   ?>
-            <div><?php include_once("page_mobile/index.php"); ?></div>
+<?php include_once("page_desktop/index.php"); ?>
+
+<?php   //if($devices == "mobile"){   ?>
+            <div><?php //include_once("page_mobile/index.php"); ?></div>
 <?php   
-        }else{     
+        //}else{     
 ?>
-            <div><?php include_once("page_desktop/index.php"); ?></div>
-<?php   }   ?>
+            <div><?php //include_once("page_desktop/index.php"); ?></div>
+<?php  // }   ?>
 
 
 

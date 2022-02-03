@@ -32,12 +32,21 @@
 					</div> -->
 					<div class="row" style="margin-top: 0.9375em;">
 						<div class="col-12">
-							<p>
-								<!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat. -->
-							</p>
+							
+							<div class="col-md-12 mt-10" style="margin-top:35px;">
+								สนใจสินค้า ติดต่อได้เลย..!
+							</div>
+							<div class="col-md-12 my-3" style="margin-top:0px;">
+								<a href="่tel:0830258992" class="btn btn-warning" style="background-color:#FFF; color:#2959c2; 
+									padding:10px 30px 10px 30px; font-size:25px;  border: 1.5px solid;" title="ขอใบเสนอราคา">
+									<strong>โทร : 083-025-8992</strong>
+								</a>
+							</div>
+							<div class="col-md-12" style="margin-top:10px;">
+								<a href="https://page.line.me/pmintermart">
+									<img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+							</div>
+
 						</div>
 					</div>
 

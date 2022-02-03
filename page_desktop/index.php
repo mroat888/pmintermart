@@ -1,58 +1,53 @@
+<?php   //if($devices == "mobile"){   ?>
+            <div><?php //include_once("page_mobile/menu_header.php"); ?></div>
+<?php  // }else{     ?>
+            <div><?php //include_once("page_desktop/header.php"); flush();; ?></div>
+<?php   //}   ?>
+
 <?php include_once("page_desktop/header.php"); flush();?>
 
 <div class="container-fluid" style="margin-top:1.5em; margin-bottom:1em;">
   <div class="row">
       <div class="container">
             <div class="row">
-            	<div class="col-8">
-            		<?php include_once("page_desktop/banner_slide_isonline.php");?>
+            	  <div class="col-md-8 col-12">
+            		  <?php include_once("page_desktop/banner_slide_isonline.php");?>
                 </div>
-                <div class="col-4">
-                <div class="flex-banner">
-                  <!-- <div>
-                         <img src="<?php echo URL;?>images/aa1-01.jpg" style="max-width: 100%;">
-                  </div>
-
-                  <div>
-                         <img src="<?php echo URL;?>images/aa1-01.jpg" style="max-width: 100%;">
-                  </div>
-                  <div>
-                         <img src="<?php echo URL;?>images/aa1-01.jpg" style="max-width: 100%;">
-                  </div>
-                  </div> -->
-                
-                	<div class="row">
-                		<div class="col-12" >
-                      <div class="container_overlay">
-                        <?php
-                          $permalink_bestseller = URL."tags/bestseller/1/";
-                        ?>
-                        <a href="<?php echo $permalink_bestseller;?>">
-                  			 <img src="<?php echo URL;?>images/aa1-01.jpg" style="max-height: 100%;">
-                          <div class="overlay_slideleft" style="background-color: #ffc54e;">
-                            <div class="overlay_text">สินค้าขายดี</div>
-                          </div>
-                        </a>
+                <?php   if($devices == "desktop"){   ?>
+                <div class="col-md-4 col-12">
+                  <div class="flex-banner">
+                    <div class="row">
+                      <div class="col-sm-4 col-md-12" >
+                        <div class="container_overlay">
+                          <?php
+                            $permalink_bestseller = URL."tags/bestseller/1/";
+                          ?>
+                          <a href="<?php echo $permalink_bestseller;?>">
+                          <img src="<?php echo URL;?>images/aa1-01.jpg" style="max-height: 100%;">
+                            <div class="overlay_slideleft" style="background-color: #ffc54e;">
+                              <div class="overlay_text">สินค้าขายดี</div>
+                            </div>
+                          </a>
+                        </div>
                       </div>
-                		</div>
+                    </div>
+                    <div class="row" style="margin-top: 1.48em;">
+                      <div class="col-sm-4 col-md-12" style="height: 11em; overflow: hidden;">
+                        <div class="container_overlay">
+                          <?php
+                            $permalink_arrival = URL."tags/arrival/1/";
+                          ?>
+                          <a href="<?php echo $permalink_arrival;?>">
+                            <img src="<?php echo URL;?>images/aa1-02.jpg" style="max-height: 100%;">
+                            <div class="overlay_slideleft" style="background-color: #008CBA;">
+                              <div class="overlay_text">สินค้ามาใหม่</div>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
                   </div>
                   <div class="row" style="margin-top: 1.48em;">
-                		<div class="col-12" style="height: 11em; overflow: hidden;">
-                      <div class="container_overlay">
-                        <?php
-                          $permalink_arrival = URL."tags/arrival/1/";
-                        ?>
-                        <a href="<?php echo $permalink_arrival;?>">
-                  			  <img src="<?php echo URL;?>images/aa1-02.jpg" style="max-height: 100%;">
-                          <div class="overlay_slideleft" style="background-color: #008CBA;">
-                            <div class="overlay_text">สินค้ามาใหม่</div>
-                          </div>
-                        </a>
-                      </div>
-                		</div>
-                  </div>
-                  <div class="row" style="margin-top: 1.48em;">
-                		<div class="col-12">
+                		<div class="col-sm-4 col-md-12">
                       <div class="container_overlay">
                         <?php
                           $permalink_hotsale = URL."products_hotsale.php";
@@ -68,6 +63,7 @@
                   </div>
                   </div>
                 </div>
+                <?php   }  ?>
             </div>
       </div>
   </div>
@@ -105,7 +101,14 @@
 
 <?php include_once("index_content.php");?>
 
-	
+<div class="container-fluid">
+	<div class="row">
+		<div class="container mb-5">
+      <?php include_once("reference_logo.php");?>
+    </div>
+  </div>
+</div>
+
 <?php include_once("page_desktop/footer.php"); ?>
 
 <style type="text/css">

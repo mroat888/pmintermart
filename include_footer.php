@@ -54,12 +54,25 @@
 
 </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics     อันใหม่   --> 
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GQWWDK1ZDR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-GQWWDK1ZDR');
+</script>
+
+
+
 <script type="text/javascript" defer>
     $(document).ready(function(){
         var stickyNav = function(){
           var scrollTop = $(window).scrollTop();
-          if(scrollTop >= 139){
-            $('.sticky-top').css({"box-shadow": "0px 8px 16px 0px rgba(0,0,0,0.2)"});
+          // if(scrollTop > 189){
+          if(scrollTop > 0){
+            $('.sticky-top').css({"box-shadow": "0px 8px 16px 0px rgba(0,0,0,0.2); mt-10"});
             $('#py_rowtop').addClass("py_rowtop_scrolling");
             $('#pm_logo').addClass("pm_logo_scrolling");
 

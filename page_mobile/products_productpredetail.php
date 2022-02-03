@@ -31,10 +31,10 @@
 			if(($record_product_name['full_price'] != 0) && ($record_product_name['full_price'] > $record_product_name['price'])){
 				$persent_discount = ($save_price*100)/$record_product_name['full_price'];
 		?>
-				<div class="div-tag" style="background-color: #FF0000;">
+				<!-- <div class="div-tag" style="background-color: #FF0000;">
 					ลด<br>
 					<?php echo "-".round($persent_discount)."%";?>
-				</div>
+				</div> -->
 		<?php
 			}
 		?>
@@ -105,11 +105,11 @@
 		<p class="card-text">
 	    	<span style="font-size: 0.8em; color: #888;">รหัสสินค้า : <?php echo $product_code;?></span>
 	    </p>
-	    <p class="card-text" style="height: 4em;">
+	    <!-- <p class="card-text" style="height: 4em;">
 	    	<span style="font-size: 1.8em; font-weight: bold; color: #333;"><?php echo $price;?></span>
 	    	<br>
 	    	<span style="font-size: 0.9em;"><?php echo $full_price; ?></span>
-	    </p>
+	    </p> -->
 	</div>
 	</a>
 </div>

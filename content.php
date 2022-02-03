@@ -14,13 +14,15 @@
     <link rel="canonical" href="<?php echo $canonical_page;?>" />
 </head>
 <body itemscope itemtype="http://schema.org/WebPage"> 
+    
+<?php include_once("page_desktop/content.php"); ?>
 
-<?php   if($devices == "mobile"){   ?>
-            <div><?php include_once("page_mobile/content.php"); ?></div>
+<?php   //if($devices == "mobile"){   ?>
+            <div><?php //include_once("page_mobile/content.php"); ?></div>
 <?php   
-        }else{     
+        //}else{     
 ?>
-            <div><?php include_once("page_desktop/content.php"); ?></div>
-<?php   }   ?>
+            <div><?php //include_once("page_desktop/content.php"); ?></div>
+<?php   //}   ?>
 
 <?php require("include_footer.php"); ?>
