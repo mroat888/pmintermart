@@ -27,7 +27,7 @@
                                 ':param_drop_status' => 'N'
                             );
                             $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
-                            product_name.is_bestseller, product_sku.*, product_sku.name as product_sku_name 
+                            product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 
                             from product_sku, product_name 
                             where product_sku.id_products_name = product_name.id and 
                             product_name.is_drop = :param_drop_status and 

@@ -98,27 +98,27 @@
                                 // product_name.id_producttype_level1 = :param_type1_id 
                                 // order by producttype_level2.name , product_name.id desc";
                                 $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
-                                product_name.is_bestseller, product_sku.*, product_sku.name as product_sku_name 
+                                product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 
                                 from product_sku, product_name, producttype_level2 
                                 where (product_sku.id_products_name = product_name.id) and 
                                 (product_name.id_producttype_level2 = producttype_level2.id) and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
                                 product_name.id_producttype_level1 = :param_type1_id "; 
-                                $str_orderby = "order by producttype_level2.name , product_sku.full_price , product_name.name , product_name.id desc";
+                                $str_orderby = "order by producttype_level2.name , product_sku.full_price , product_name.position_index , product_name.name , product_name.id desc";
                             }else{
                                 // $str_product_name = "select id, product_code, name 
                                 // from product_name where is_drop = :param_drop_status and 
                                 // id_producttype_level1 = :param_type1_id 
                                 // order by id desc";
                                 $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
-                                product_name.is_bestseller, product_sku.*, product_sku.name as product_sku_name 
+                                product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 
                                 from product_sku, product_name 
                                 where product_sku.id_products_name = product_name.id and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
                                 product_name.id_producttype_level1 = :param_type1_id ";   
-                                $str_orderby = "order by product_sku.full_price , product_name.name , product_name.id desc";
+                                $str_orderby = "order by product_sku.full_price , product_name.position_index , product_name.name , product_name.id desc";
                             }
                             
                             $str_product_name = $str_product_name.$str_orderby;

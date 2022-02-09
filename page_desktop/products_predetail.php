@@ -43,24 +43,40 @@
 		?>
 		<?php
 			$tags_bestsell = false;
-			if(($record_product_name['tags'] != "")){
-				$tags_message = $record_product_name['tags'];
-				$tags_find = "bestseller";
-				if((strpos($tags_message,$tags_find)) !== false){
-					$tags_bestsell = true;
-				}
-			}else{
-				$tags_message = $record_product_name['tags'];
-				$tags_find = "bestseller";
-				if((strpos($tags_message,$tags_find)) !== false){
-					$tags_bestsell = true;
-				}
+			$tags_arrival = false;
+			// if(($record_product_name['tags'] != "")){
+			// 	$tags_message = $record_product_name['tags'];
+			// 	$tags_find = "bestseller";
+			// 	if((strpos($tags_message,$tags_find)) !== false){
+			// 		$tags_bestsell = true;
+			// 	}
+			// }else{
+			// 	$tags_message = $record_product_name['tags'];
+			// 	$tags_find = "bestseller";
+			// 	if((strpos($tags_message,$tags_find)) !== false){
+			// 		$tags_bestsell = true;
+			// 	}
+			// }
+			if($record_product_name['is_bestseller'] == "Y"){
+				$tags_bestsell = true;
 			}
-			
-			if($tags_bestsell){
+			if($record_product_name['is_arrival'] == "Y"){
+				$tags_arrival = true;
+			}
+			if($tags_bestsell == true){
 		?>
 				<div class="div-tag" style="background-color: #ffd21d; color: #000000;">
 					สินค้า<br>ขายดี
+				</div>
+		<?php
+			}
+		?>
+		
+		<?php
+			if($tags_arrival == true){
+		?>
+				<div class="div-tag" style="background-color: #ff0000; color: #ffffff; padding-top:3px;">
+					New<br>ใหม่
 				</div>
 		<?php
 			}
