@@ -84,7 +84,7 @@
                             <a href="https://www.youtube.com/channel/UCBXT2FuvV-YFfTjpI41BlDA" target="_blank" class="font_gray"><i class="fab fa-youtube"></i></a>&nbsp;
                             <a href="javascript:void(0)" class="font_gray"><i class="fab fa-twitter"></i></a>&nbsp;
                             <a href="https://www.instagram.com/pmintermartofficial/" target="_blank"class="font_gray"><i class="fab fa-instagram"></i></a>&nbsp;
-                            <a href="https://page.line.me/pmintermart" target="_blank" class="font_gray"><i class="fab fa-line"></i></a>
+                            <a href="https://lin.ee/7ueYKjj" target="_blank" class="font_gray"><i class="fab fa-line"></i></a>
                         </div>
                         <div class="col-12" style="margin-top:2em;">
                             <h4 class="font_header font_blue" style="font-size:20px; font-weight: 500; color: #333;">วิธีการชำระเงิน</h4>

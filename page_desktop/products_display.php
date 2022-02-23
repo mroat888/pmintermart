@@ -43,8 +43,10 @@
 								</a>
 							</div>
 							<div class="col-md-12" style="margin-top:10px;">
-								<a href="https://page.line.me/pmintermart">
-									<img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
+								<!-- <a href="https://page.line.me/pmintermart">
+									<img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a> -->
+									<a href="https://lin.ee/7ueYKjj" target="_blank">
+										<img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"></a>
 							</div>
 
 						</div>
