@@ -48,13 +48,14 @@
     .btn_groupproducts{
         position: absolute;
         text-align: center;
-        margin-top: -8em;
+        /* margin-top: -8em; */
+        margin-top: -3.5em;
         width: 60%;
         margin-left: 20%;
-        /*border: 1px solid green;*/
         border-radius: 1.5em;
         background-color: #FFFFFF;
-        padding: 10px;
+        /* padding: 10px; */
+        padding: 8px;
         font-size: 0.7em;
         font-weight: bold;
     }

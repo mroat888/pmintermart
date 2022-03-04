@@ -54,7 +54,7 @@
 
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics     อันใหม่   --> 
+<!-- Global site tag (gtag.js) - Google Analytics     อันใหม่ ไม่ใช้แล้ว  --> 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-GQWWDK1ZDR"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -149,6 +149,31 @@
     });  
 </script>
 
+
+<style>
+  .fb-messager{
+    width:50px;
+    height:50px;
+    border: 0px solid #fff; /* เส้นขอบขนาด 3px solid: เส้น #fff:โค้ดสีขาว */
+    border-radius: 50%; /* ปรับเป็น 50% คือความโค้งของเส้นขอบ*/
+    position:fixed;
+    right:30px;
+    bottom:90px;
+    z-index:9999;
+  }
+  .fb-messager:hover{
+    /*cursor:pointer;
+    /*box-shadow:3px 3px 10px 0px #cacaca;*/
+    /*box-shadow: 1px 3px 5px #686767;; /* เงาของรูป */
+  }
+  
+</style>
+
+<a href="https://lin.ee/7ueYKjj" target="_blank">
+  <div class="fb-messager" style="background-image: url('https://www.hotelgoodscenter.com/images/icon_line_at.png');">
+    
+  </div>
+</a>
 
 
 
