@@ -5,6 +5,20 @@
   /*letter-spacing: 0.055em;*/
 }
 
+@font-face {
+  font-family: "angsana-new";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../../fonts/angsana-new/angsab.ttf") format('truetype');
+}
+
+.font_logo_ele{
+  font-family: "angsana-new";
+  font-size:45px;
+  font-weight: bold;
+}
+
+
 @media(min-width: 1360px) {
 	html {
 	    /*font-size: 62.5%; /* เพื่อให้ 1rem มีค่าประมาณ 10px */

@@ -16,7 +16,18 @@
                     </div>
 					<div class="row" style="margin-top: 1em; margin-bottom: 1em;">
 						<div class="col-12">
-							<h1><?php echo $type2_name; ?></h1>
+							<div style="float:left"><h1><?php echo $type2_name; ?></h1></div>
+                            <?php
+                                if($record_type2['is_brand'] == "Y"){
+                            ?>
+                                    <div style="float:left; margin-top:-8px; margin-left:30px;">
+                                        <div style="background-color:#000; padding:15px; height:50px; margin-top:10px;">
+                                            <div style="margin-top:-25px; color:#FFF;" class="font_logo_ele">ELEGANCE</div>
+                                        </div>
+                                    </div>
+                            <?php
+                                }
+                            ?>
 						</div>
 					</div>
                     <div class="row" style="margin-top: 1em; margin-bottom: 3em;">

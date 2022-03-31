@@ -17,8 +17,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sarabun|Prompt">
 
 <!-- My Style -->
+<?php
+  $style="lib/css/style.css?".time();
+?>
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_menutop_desktop.css" crossorigin="anonymous">
-<link rel="stylesheet" href="<?php echo URL; ?>lib/css/style.css" crossorigin="anonymous">
+<link rel="stylesheet" href="<?php echo URL; ?><?php echo $style; ?>" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_owl_carousel.css?20210304-2" crossorigin="anonymous">
 
 

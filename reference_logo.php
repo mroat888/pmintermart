@@ -2,7 +2,7 @@
     <div class="col-12" style="text-align:right;"> 
         <a href="client.php">
             <div>
-                <span class="text_color_header" style="font-size:25px;">Some of our reference clients...</span>
+                <span class="text_color_header" style="font-size:25px;">Referable Client Categories...</span>
             </div>
         </a>
     </div>
