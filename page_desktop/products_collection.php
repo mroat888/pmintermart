@@ -21,8 +21,8 @@
                                 if($record_type2['is_brand'] == "Y"){
                             ?>
                                     <div style="float:left; margin-top:-8px; margin-left:30px;">
-                                        <div style="background-color:#000; padding:15px; height:50px; margin-top:10px;">
-                                            <div style="margin-top:-25px; color:#FFF;" class="font_logo_ele">ELEGANCE</div>
+                                        <div style="background-color:#000; padding:15px; height:30px; margin-top:20px;">
+                                            <div style="margin-top:-20px; color:#FFF; font-size:25px;" class="font_logo_ele">ELEGANCE</div>
                                         </div>
                                     </div>
                             <?php

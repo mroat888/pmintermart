@@ -10,12 +10,12 @@
 <div class="mt-3">
     <div class="owl-carousel owl-theme">
         <?php
-            for($i=1; $i<38; $i++){
+            for($i=1; $i<=47; $i++){
         ?>
         <div class="item">
             <img data-u="image" onclick="javascript:window.location.href='client.php'" 
-            style="cursor: pointer; max-height:55px; " 
-            src="<?php echo URL; ?>referance/ref-<?=$i?>.png" />
+            style="cursor: pointer; max-height:60px; max-width:90px;" 
+            src="<?php echo URL; ?>referance/v2/ref-<?=$i?>.png" />
         </div>
         <?php
             }
