@@ -76,9 +76,9 @@
 										?>
 												<a href="<?php echo $permalink_category; ?>">
 													<li class="font_black">
-														<span>
+														<!-- <span> -->
 															<?php echo $lv3_name; ?>
-														</span>
+														<!-- </span> -->
 													</li>
 												</a>
 										<?php

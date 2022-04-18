@@ -23,9 +23,13 @@
 							<h1><?php echo $product_name; ?></h1>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 0.9375em;">
+					<div class="row mt-4 mx-3">
+						<div class="col-12 head_properties">
+							<?php echo $record_products['head_properties']; ?>
+						</div>
+					</div>
+					<div class="row">
 						<div class="col-12">
-							
 							<div class="col-md-12 mt-10" style="margin-top:35px;">
 								สนใจสินค้า ติดต่อได้เลย..!
 							</div>
@@ -84,6 +88,17 @@
 		margin-left: 3em;
 		width: 15em;	
 	}
+
+	.head_properties{
+		padding-left:3em;
+		padding-right:3em;
+	}
+
+	.head_properties ul li{
+		margin-left: 1.5em;
+		list-style:square;
+	}
+
 </style>
 <script>
 
