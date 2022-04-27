@@ -19,10 +19,25 @@
                     ?>
                 </div>
                 <div class="col-md-6" style="text-align:right;">
-                    <i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : 083-025-8992<!-- &nbsp;&nbsp; -->
+                    <div class="row">
+                        <div class="col">
+                            <i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : 083-025-8992
+                        </div>
+                        <div class="col-3">
+                            <div id="google_translate_element" style="margin:0px;"></div>  
+                        </div>
+                    </div>
+                    <!-- <i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : 083-025-8992&nbsp;&nbsp; -->
                     <!-- <i class="fa fa-envelope"></i>&nbsp;&nbsp;Email: contactus.enr@gmail.com -->
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'th', includedLanguages: 'de,en,es,fr,id,it,ja,ko,lo,ms,pt,ru,sv,th,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+</script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
