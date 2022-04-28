@@ -21,7 +21,7 @@
                 <div class="col-md-6" style="text-align:right;">
                     <div class="row">
                         <div class="col">
-                            <i class="fa fa-phone"></i>&nbsp;&nbsp;Hotline : 083-025-8992
+                            <i class="fa fa-phone"></i>&nbsp;&nbsp;<strong>Hotline : 094 889 5001, 094 893 5002</strong>
                         </div>
                         <div class="col-3">
                             <div id="google_translate_element" style="margin:0px;"></div>  

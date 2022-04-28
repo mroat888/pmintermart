@@ -56,8 +56,8 @@
 								<strong>(ยกเว้นวันหยุดนักขัตฤกษ์)</strong>
 							</p>
 							<p>
-								Phone&nbsp; : (02) 149 5471<br>
-								Hotline : 083 025 8992<br>
+								Hotline : 094 889 5001, 094 893 5002<br>
+								Office&nbsp; : (02) 149 5471, 083 025 8992<br>							
 								<!-- Email : <a href="mailto:contactus.enr@gmail.com">contactus.enr@gmail.com</a> -->
 							</p>
 						</div>

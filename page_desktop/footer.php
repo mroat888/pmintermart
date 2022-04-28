@@ -42,10 +42,10 @@
                         <span style="font-size: 0.7em;">(ยกเว้นหยุดนักขัตฤกษ์)</span>
                     </p>
                     <p>
-                        <i class="fas fa-phone-alt"></i>&nbsp;(02) 149 5471
+                        <i class="fas fa-mobile-alt"></i>&nbsp;094 889 5001, 094 893 5002
                     </p>
                     <p>
-                        <i class="fas fa-mobile-alt"></i>&nbsp;083 025 8992
+                        <i class="fas fa-phone-alt"></i>&nbsp;(02) 149 5471, 083 025 8992
                     </p>
                     <p>
                         <i class="fab fa-line"></i>&nbsp;@PMINTERMART
