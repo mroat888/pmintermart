@@ -308,6 +308,17 @@
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
+
+</script>
+
+<script>
+
+// $( document ).ready(function() {
+//   var h = $('h1').text();
+
+//   console.log(h);
+// });
+
 </script>
 
 </body>
