@@ -176,7 +176,7 @@
                     <img src='<?php echo $path_image."directmail_4.jpg"; ?>' style="max-width:100%;">
                 </a>
                 <span>
-                    <a href="<?php echo $url_link_4; ?>"> 
+                    <a href="<?php echo $url_link_4; ?>" > 
                         <h3>ไดร์เป่าผม</h3>
                     </a>
                     <p class="p_descrpition">
