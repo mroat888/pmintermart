@@ -100,25 +100,25 @@
 	</div>
     <div class="container">
         <div class="my-row" style="background-color:#FFFFFF; padding-top:5px; text-align:center;">
-			<div class="my-row" style="padding-bottom:20px;">
-                <div class="my-row" style="text-align:center;">
+			<div class="my-row" style="padding-bottom:20px; text-align:center;">
+                <span>
                     <a href="<?php echo $url_link_1; ?>">
                         <h2>เตรียมอุปกรณ์ พร้อมเข้า 'ฤดูฝน'  ต้นเดือน พ.ค.</h2>
                     </a>
                         <h3>ส่วนต้อนรับหน้าอาคาร ทางเดิน เตรียมอุปกรณ์ พร้อม ? <br>
                         ให้ผู้มาใช้บริการเริ่มแรกอย่างใส่ใจ เกิดความรู้สึกดีๆ <br>ประทับใจในการต้อนรับ หน้าฝนนี้</h3>
-                </div>
+                </span>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="my-row" style="background-color:#FFFFFF; padding-top:5px; text-align:center;">
-			<div class="my-row" style="padding-bottom:20px;">
+			<div class="my-row" style="padding-bottom:20px; text-align:center;">
                 <a href="<?php echo $url_link_1; ?>">
                     <img src='<?php echo $path_image."directmail_1.jpg"; ?>' style="max-width:100%;">
                 </a>
-                <div class="my-row" style="text-align:center;">
+                <span>
                     <a href="<?php echo $url_link_1; ?>">
                         <h3>ที่ใส่ร่ม ที่เก็บร่ม</h3>
                     </a>
@@ -126,18 +126,18 @@
                         เฟอร์นิเจอร์ทรงกระบอก ทรงเหลี่ยมแบ่งช่องตระแกรงไว้ เสียบ เก็บ แขวน ร่มพับ ร่มด้ามยาวเปียกฝน ให้เป็นระเบียบเรียบร้อย 
                         ส่วนต้อนรับหมดปัญหาน้ำนองพื้นเปียก เปอะเปื้อนทางเข้าออกหน้าห้างร้าน ภัตตาคาร โรงแรมโรงงาน และสถานที่ราชการ
                     </p>
-                </div>
+                </span>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="my-row" style="background-color:#FFFFFF; padding-top:20px; text-align:center;">
-			<div class="my-row" style="padding-bottom:20px;">
+			<div class="my-row" style="padding-bottom:20px; text-align:center;">
                 <a href="<?php echo $url_link_2; ?>">   
                     <img src='<?php echo $path_image."directmail_2.jpg"; ?>' style="max-width:100%;">
                 </a>
-                <div class="my-row" style="text-align:center;">
+                <span>
                     <a href="<?php echo $url_link_2; ?>"> 
                         <h3>เครื่องสวมถุงร่มเปียก</h3>
                     </a>
@@ -145,18 +145,18 @@
                         อุปกรณ์เครื่องส่วมใส่ถุงพลาสติก ห่อร่มพับ ร่มยาวเปียกฝน จัดวางหน้าอาคารส่วนต้อนรับลูกค้า 
                         พื้นไม่เปียกลื่นแฉะ ผู้มาใช้บริการเดินเข้าออกสบายใจ
                     </p>
-                </div>
+                </span>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="my-row" style="background-color:#FFFFFF; padding-top:20px; text-align:center;">
-			<div class="my-row" style="padding-bottom:20px;">
+			<div class="my-row" style="padding-bottom:20px; text-align:center;">
                 <a href="<?php echo $url_link_3; ?>"> 
                     <img src='<?php echo $path_image."directmail_3.jpg"; ?>' style="max-width:100%;">
                 </a>
-                <div class="my-row" style="text-align:center;">
+                <span>
                     <a href="<?php echo $url_link_3; ?>"> 
                         <h3>ป้ายเตือนความปลอดภัย</h3>
                     </a>
@@ -164,18 +164,18 @@
                         ป้ายตั้งวางที่เป็นรูปสัญญลักษณ์ หรือ ข้อความสากลสื่อ เตือน ห้าม ป้องกัน 
                         ระวังอุบัติเหตุอาจเกิดขึ้นได้กับผู้เข้ามาใกล้พื้นที่ หรือ เดินผ่าน อย่ามองข้ามความปลอดภัย
                     </p>
-                </div>
+                </span>
             </div>
         </div>
     </div>
 
     <div class="container">
         <div class="my-row" style="background-color:#FFFFFF; padding-top:20px; text-align:center;">
-			<div class="my-row" style="padding-bottom:20px;">
+			<div class="my-row" style="padding-bottom:20px; text-align:center;">
                 <a href="<?php echo $url_link_4; ?>"> 
                     <img src='<?php echo $path_image."directmail_4.jpg"; ?>' style="max-width:100%;">
                 </a>
-                <div class="my-row" style="text-align:center;">
+                <span>
                     <a href="<?php echo $url_link_4; ?>"> 
                         <h3>ไดร์เป่าผม</h3>
                     </a>
@@ -183,7 +183,7 @@
                         ผลิตภัณฑ์โรงแรมคุณภาพ รูปทรงล้ำยุค มาตรฐาน JAWA เยรมันนี ประสิทธิภาพสูง เครื่องทำงานเมื่อกดปุ่ม
                         และเครื่องตัดอัตโนมัติเมื่อความร้อนสูงเกิน เพิ่มความปลอดภัย 2เท่า ทั้งแบบแขวนติดผนังและพับเก็บ
                     </p>
-                </div>
+                </span>
             </div>
         </div>
     </div>
