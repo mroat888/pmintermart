@@ -51,7 +51,7 @@
                             );
                             $str_producttype_level3 = "select * from producttype_level3 
                             where status = :param_status and id_producttype_level2 = :param_type2_id 
-                            order by name";
+                            order by ordinal_number asc , name asc";
                             $result_producttype_level3 = $conn->prepare($str_producttype_level3);
                             $result_producttype_level3->execute($array_param_producttype_level3);
 
@@ -117,7 +117,7 @@
                                 product_sku.is_drop = :param_drop_status and 
                                 product_name.id_producttype_level2 = :param_type2_id "; 
                                 // $str_orderby = "order by producttype_level3.name , product_sku.full_price , product_name.position_index , product_name.name , product_name.id desc";
-                                $str_orderby = "order by product_name.position_index, producttype_level3.name, product_name.id desc, product_name.name";
+                                $str_orderby = "order by producttype_level3.ordinal_number, product_name.position_index, product_name.id desc, product_name.name";
                             }else{
                                 $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
                                 product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 

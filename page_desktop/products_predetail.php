@@ -122,7 +122,8 @@
 			<h5 class="card-title"><?php echo $product_name; ?></h5>
 		</div>
 		<p class="card-text">
-	    	<span style="font-size: 0.8em; color: #888;">รหัสสินค้า : <?php echo $product_code;?></span>
+	    	<span style="font-size: 0.8em; color: #000;">รหัสสินค้า : <?php echo $product_code;?></span>
+			<!-- <span style="font-size: 0.8em; color: #888;">รหัสสินค้า : <?php echo $product_code;?></span> -->
 	    </p>
 	    <!-- <p class="card-text" style="height: 4em;">
 	    	<span style="font-size: 1.8em; font-weight: bold; color: #333;"><?php echo $price;?></span>

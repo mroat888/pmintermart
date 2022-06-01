@@ -20,10 +20,15 @@
 				<div class="col-6" style="min-height: 31.25em;">
 					<div class="row">
 						<div class="col-12">
-							<h1><?php echo $product_name; ?></h1>
+							<h1 style="margin:0px; padding-left:15px;" ><?php echo $product_name; ?></h1>
 						</div>
 					</div>
-					<div class="row mt-4 mx-3">
+					<div class="row mx-1 mt-1">
+						<div class="col-12">
+							รหัส : <?php echo $record_sku['sku_code']?>
+						</div>
+					</div>
+					<div class="row mt-2 mx-0">
 						<div class="col-12 head_properties">
 							<?php echo $record_products['head_properties']; ?>
 						</div>
@@ -31,11 +36,11 @@
 					<div class="row">
 						<div class="col-12">
 							<div class="col-md-12 mt-10" style="margin-top:35px;">
-								สนใจสินค้า ติดต่อได้เลย..!
+								สั่งสินค้า โทรเลย ..!
 							</div>
 							<div class="col-md-12 my-3" style="margin-top:0px;">
 								<a href="่tel:0830258992" class="btn btn-warning" style="background-color:#FFF; color:#2959c2; 
-									padding:10px 30px 10px 30px; font-size:25px;  border: 1.5px solid;" title="ขอใบเสนอราคา">
+									padding:10px 30px 10px 30px; font-size:25px;  border: 1.5px solid;">
 									<strong>โทร : 083-025-8992</strong>
 								</a>
 							</div>
