@@ -50,12 +50,12 @@
                             $result_product_name->execute($array_param_product_name);
                         ?>
 
-<?php   if($devices == "mobile"){   ?>
-            <div><?php include_once("page_mobile/products_search.php"); ?></div>
+<?php  // if($devices == "mobile"){   ?>
+            <div><?php // include_once("page_mobile/products_search.php"); ?></div>
 <?php   
-        }else{     
+        // }else{     
 ?>
             <div><?php include_once("page_desktop/products_search.php"); ?></div>
-<?php   }   ?>
+<?php   // }   ?>
 
 <?php require("include_footer.php"); ?>

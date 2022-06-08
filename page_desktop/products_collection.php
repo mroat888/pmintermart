@@ -43,7 +43,7 @@
                         }
                     ?>
 
-                    <div class="row" style="margin-top: 1em; margin-bottom: 3em;">
+                    <div class="row" style="margin-top: 1em; margin-bottom: 3em; padding-left:21px; padding-right:21px;">
                         <?php
                             $array_param_producttype_level3 = array(
                                 ':param_type2_id' => $typ2, 

@@ -21,7 +21,8 @@
                             // $result_product_name มาจากหน้ารวม products_search  (ใช้รวมกัน)
                             while($record_product_name = $result_product_name->fetch(PDO::FETCH_ASSOC)){ 
                         ?>
-                                <div class="col-3" style="margin-bottom:0.1em; padding: 0.5em; ">
+                                <!-- <div class="col-3" style="margin-bottom:0.1em; padding: 0.5em; "> -->
+								<div class="col-md-3 col-6">
                                     <?php include("page_desktop/products_predetail.php");?>
                                 </div>
                         <?php 
