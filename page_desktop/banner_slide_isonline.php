@@ -1,5 +1,12 @@
 <div class="">
     <div class="owl-carousel owl-carousel-banner-isonline owl-theme">
+        
+        <div class="item">
+            <a href="<?php echo URL; ?>">
+                <img class="d-block w-100" src="<?php echo URL; ?>banner_slide/banner-pm-2022-06.webp" 
+                alt="สินค้าโรงแรม มีครบจบที่นี่"style="max-width:100%;">
+            </a>
+        </div>
         <div class="item">
             <a href="<?php echo URL; ?>collection/7/ไดร์เป่าผม/1/">
                 <img class="d-block w-100" src="<?php echo URL; ?>banner_slide/Wall-Mounted-Hair-Dryer-2020-04-02.webp" 
