@@ -15,16 +15,14 @@
 <link href="<?php echo URL; ?>vendor/fontawesome-free-5.15.1-web/css/brands.css" rel="stylesheet">
 <link href="<?php echo URL; ?>vendor/fontawesome-free-5.15.1-web/css/solid.css" rel="stylesheet">
 
-
-
 <!-- My Style -->
 <?php
   $style="lib/css/style.css?".time();
 ?>
+
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_menutop_desktop.css" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo URL; ?><?php echo $style; ?>" crossorigin="anonymous">
 <link rel="stylesheet" href="<?php echo URL; ?>lib/css/style_owl_carousel.css?20210304-2" crossorigin="anonymous">
-
 
 <script src="<?php echo URL; ?>lib/js/popper.min.js" crossorigin="anonymous"></script>
 <script src="<?php echo URL; ?>vendor/bootstrap-4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
@@ -33,7 +31,9 @@
 <!-- <script src="<?php //echo URL;?>lib/js/nosave.js" defer></script>
 <script src="<?php //echo URL;?>lib/js/function_language.js" defer></script> -->
 <script src="<?php echo URL;?>lib/js/function.ajax.js"></script>
-<!-- <?php
+
+<!-- 
+<?php
     if($devices == "mobile"){   
         include_once("page_mobile/include_function_mobile.php");
     }
@@ -43,13 +43,14 @@
     if($devices == "desktop"){   
         include_once("page_desktop/include_function_desktop.php");
     }
-?> -->
-
+?> 
+-->
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-LV1SYF6MR0"></script>
 <script>
+
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
@@ -58,8 +59,19 @@
 
 </script>
 
+<!-- Global site tag (gtag.js) - Google Analytics **ตัวใหม่** -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDZ9JS1X66"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-LDZ9JS1X66');
+</script>
+
 
 <script type="text/javascript" defer>
+
     // window.addEventListener('touchstart', event => {
     //   console.log(event);
     //   onTouchStart;
@@ -144,9 +156,6 @@
     //     })
     //   });
     // }
-
-
-
 
     $(document).ready(function(){
 
@@ -233,6 +242,7 @@
 
 
 <style>
+
   .fb-messager{
     width:50px;
     height:50px;
@@ -252,14 +262,12 @@
 </style>
 
 <a href="https://lin.ee/7ueYKjj" target="_blank">
-  <div class="fb-messager" style="background-image: url('https://www.hotelgoodscenter.com/images/icon_line_at.png');">
-    
-  </div>
+  <div class="fb-messager" style="background-image: url('https://www.hotelgoodscenter.com/images/icon_line_at.png');"></div>
 </a>
 
 
-
 <script>
+
   window.fbAsyncInit = function() {
     FB.init({
       appId      : '159040122759800',
@@ -267,7 +275,7 @@
       xfbml      : true,
       version    : 'v10.0'
     });
-      
+
     FB.AppEvents.logPageView();   
       
   };
@@ -279,17 +287,17 @@
      js.src = "https://connect.facebook.net/en_US/sdk.js";
      fjs.parentNode.insertBefore(js, fjs);
    }(document, 'script', 'facebook-jssdk'));
-</script>
 
+</script>
 
 <!-- Messenger ปลั๊กอินแชท Code -->
 <div id="fb-root"></div>
 
 <!-- Your ปลั๊กอินแชท code -->
-<div id="fb-customer-chat" class="fb-customerchat">
-</div>
+<div id="fb-customer-chat" class="fb-customerchat"></div>
 
 <script>
+
   var chatbox = document.getElementById('fb-customer-chat');
   chatbox.setAttribute("page_id", "106806074049943");
   chatbox.setAttribute("attribution", "biz_inbox");
@@ -308,16 +316,6 @@
     js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
     fjs.parentNode.insertBefore(js, fjs);
   }(document, 'script', 'facebook-jssdk'));
-
-</script>
-
-<script>
-
-// $( document ).ready(function() {
-//   var h = $('h1').text();
-
-//   console.log(h);
-// });
 
 </script>
 
