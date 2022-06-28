@@ -59,16 +59,6 @@
 
 </script>
 
-<!-- Global site tag (gtag.js) - Google Analytics **ตัวใหม่** -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LDZ9JS1X66"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LDZ9JS1X66');
-</script>
-
 
 <script type="text/javascript" defer>
 
