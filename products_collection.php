@@ -27,14 +27,21 @@
         $canonical_page = URL."collection/".$record_type2['id']."/".$canonical_type2_name."/"."1/".$lang."/";
     }else{
         $type1_name = $record_type1['name'];
-        $type2_name = $record_type2['name'];
+
+        if($record_type2['name_en'] != ""){
+            $type2_name = $record_type2['name'].' : '.$record_type2['name_en'];
+        }else{
+            $type2_name = $record_type2['name'];
+        }
+        $type2_name_setLinkReplace = $record_type2['name'];
+        
         $meta_title = @$record_type2['meta_title'];
-        $canonical_type2_name = $pagetitle->setLinkReplace($type2_name);
+        $canonical_type2_name = $pagetitle->setLinkReplace($type2_name_setLinkReplace);
         $canonical_page = URL."collection/".$record_type2['id']."/".$canonical_type2_name."/"."1/";
     }
     
     if($meta_title == ""){
-        $meta_title = $type2_name." ".$type1_name. " มาตราฐานโรงแรม";
+        $meta_title = $type2_name_setLinkReplace." ".$type1_name. " มาตราฐานโรงแรม";
     }
 
     $meta_description = $record_type2['meta_description'];
