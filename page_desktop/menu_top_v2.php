@@ -64,7 +64,7 @@
 
 										$str_type_lv3 = "select id, name, name_en from producttype_level3 
 										where status = :param_status and id_producttype_level2 = :param_type_lv2 
-										order by name";
+										order by ordinal_number , name";
 										$result_type_lv3 = $conn->prepare($str_type_lv3);
 										$result_type_lv3->execute($array_type_lv3);
 
