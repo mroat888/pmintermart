@@ -30,6 +30,18 @@
                             ?>
 						</div>
 					</div>
+                    <?php
+                        if(!is_null($record_type3['name_description'])){
+                    ?>
+                        <!-- <div class="row" style="margin-top: -0.5em; margin-bottom: 1em;"> -->
+                        <div class="row" style="margin-top: 2em; margin-bottom: 1em;">
+                            <div class="col-12">
+                                <div><h5><?php echo $record_type3['name_description']; ?></h5></div>
+                            </div>   
+                        </div>
+                    <?php
+                        }
+                    ?>
 					<div class="row">
 						<?php
                             $array_param_product_name = array(
