@@ -31,11 +31,16 @@
         $canonical_type3_name = $pagetitle->setLinkReplace($type3_name);
         $canonical_page = URL."category/".$record_type2['id']."/".$canonical_type2_name."/"."1/".$lang."/";
     }else{
+        if($record_type3['name_en'] != ""){
+            $type3_name = $record_type3['name'].' : '.$record_type3['name_en'];
+        }else{
+            $type3_name = $record_type3['name'];
+        }
         $type1_name = $record_type1['name'];
         $type2_name = $record_type2['name'];
-        $type3_name = $record_type3['name'];
+        $type3_name_setLinkReplace = $record_type3['name'];
         $meta_title = @$record_type3['meta_title'];
-        $canonical_type3_name = $pagetitle->setLinkReplace($type3_name);
+        $canonical_type3_name = $pagetitle->setLinkReplace($type3_name_setLinkReplace);
         $canonical_page = URL."category/".$record_type3['id']."/".$canonical_type3_name."/"."1/";
     }
     
