@@ -16,8 +16,13 @@
         $canonical_page = URL."group/".$record_type1['id']."/".$canonical_type1_name."/"."1/".$lang."/";
 
     }else{
-        $type1_name = $record_type1['name'];
-        $canonical_type1_name = $pagetitle->setLinkReplace($type1_name);
+        if($record_type1['name_en'] != ""){
+            $type1_name = $record_type1['name'].' : '.$record_type1['name_en'];
+        }else{
+            $type1_name = $record_type1['name'];
+        }
+        $type1_name_setLinkReplace = $record_type1['name'];
+        $canonical_type1_name = $pagetitle->setLinkReplace($type1_name_setLinkReplace);
         $canonical_page = URL."group/".$record_type1['id']."/".$canonical_type1_name."/"."1/";
     }
 
