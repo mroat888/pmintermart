@@ -15,9 +15,11 @@
 	<?php
 		}else{
 	?>
-			<button type="button" class="btn btn-success" 
+			<!-- <button type="button" class="btn btn-success" 
 			onclick="javascript:window.open('https://page.line.me/pmintermart', '_blank');" 
-			style="width:100%; font-size: 2.5em; font-weight: bold;"><i class="fab fa-line"></i> จองสินค้าผ่านไลน์</button>
+			style="width:100%; font-size: 2.5em; font-weight: bold;"><i class="fab fa-line"></i> ซื้อสินค้าผ่านไลน์</button> -->
+			<button type="button" class="btn btn-success" style="width:100%; font-size: 2.5em; font-weight: bold;">
+			<i class="fab fa-line"></i> ซื้อสินค้า.!</button>
 	<?php
 		}
 	?>

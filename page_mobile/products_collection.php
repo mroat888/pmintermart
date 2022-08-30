@@ -13,7 +13,7 @@
 							<h1><?php echo $type2_name; ?></h1>
 						</div>
 					</div>
-					<div class="row" style="margin-top: 1em; margin-bottom: 3em;">
+					<div class="row" style="margin-top: 1em; margin-bottom: 3em; padding-left:0.5em; padding-right:0.5em;">
                         <?php
                             $array_param_producttype_level3 = array(
                                 ':param_type2_id' => $typ2, 
@@ -21,7 +21,7 @@
                             );
                             $str_producttype_level3 = "select * from producttype_level3 
                             where status = :param_status and id_producttype_level2 = :param_type2_id 
-                            order by name";
+                            order by ordinal_number asc , name asc";
                             $result_producttype_level3 = $conn->prepare($str_producttype_level3);
                             $result_producttype_level3->execute($array_param_producttype_level3);
 
@@ -77,34 +77,26 @@
                                 ':param_drop_status' => 'N'
                             );
                             if($check_lv){
-                                /*$str_product_name = "select product_name.id, product_name.product_code, product_name.name, product_name.is_bestseller , product_name.tags
-                                from product_name , producttype_level3
-                                where (product_name.id_producttype_level3 = producttype_level3.id) and 
-                                product_name.is_drop = :param_drop_status and 
-                                product_name.id_producttype_level2 = :param_type2_id ";
-                                $str_orderby = "order by producttype_level3.name , product_name.name , id desc";*/
                                 $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
-                                product_name.is_bestseller, product_sku.*, product_sku.name as product_sku_name 
+                                product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 
                                 from product_sku, product_name, producttype_level3 
                                 where (product_sku.id_products_name = product_name.id) and 
                                 (product_name.id_producttype_level3 = producttype_level3.id) and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
-                                product_sku.price > :param_price and 
                                 product_name.id_producttype_level2 = :param_type2_id "; 
-                                $str_orderby = "order by producttype_level3.name , product_sku.full_price , product_name.name , product_name.id desc";
+                                // $str_orderby = "order by producttype_level3.name , product_sku.full_price , product_name.position_index , product_name.name , product_name.id desc";
+                                $str_orderby = "order by producttype_level3.ordinal_number, producttype_level3.name, product_name.position_index, product_name.id desc, product_name.name";
                             }else{
-                                /*$str_product_name = "select id, product_code, name, is_bestseller, tags from product_name where is_drop = :param_drop_status and id_producttype_level2 = :param_type2_id ";
-                                $str_orderby = "order by name , id desc";*/
                                 $str_product_name = "select product_name.name as product_name_name, product_name.tags, 
-                                product_name.is_bestseller, product_sku.*, product_sku.name as product_sku_name 
+                                product_name.is_bestseller, product_name.is_arrival, product_sku.*, product_sku.name as product_sku_name 
                                 from product_sku, product_name 
                                 where product_sku.id_products_name = product_name.id and 
                                 product_name.is_drop = :param_drop_status and 
                                 product_sku.is_drop = :param_drop_status and 
-                                product_sku.price > :param_price and 
                                 product_name.id_producttype_level2 = :param_type2_id ";   
-                                $str_orderby = "order by product_sku.full_price , product_name.name , product_name.id desc";
+                                // $str_orderby = "order by product_sku.full_price , product_name.position_index , product_name.name , product_name.id desc";
+                                $str_orderby = "order by product_name.position_index, product_name.id desc, product_name.name";
                             }
                             
                             $str_product_name = $str_product_name.$str_orderby;
@@ -134,10 +126,12 @@
                         ?>
                     </div>
                     <div class="row">
-                        <?php 
-                            $get_pagination = "collection/".$typ2."/".$type2_name."/";
-                            include_once("products_pagination.php"); 
-                        ?>
+                        <div class="col-12">
+                            <?php 
+                                $get_pagination = "collection/".$typ2."/".$type2_name."/";
+                                include_once("products_pagination.php"); 
+                            ?>
+                        </div>
                     </div>
 				</div>
 			</div>

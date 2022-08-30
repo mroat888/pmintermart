@@ -8,7 +8,7 @@
 				<img src="<?php echo URL_IMG;?>images/PM-LOGO.jpg" 
 				style="max-height: 4em; padding-top: 0.5em; padding-bottom: 0.5em;" ></a>
 		</div>
-		<div class="col-6" style="margin-top: 1em;">
+		<div class="col-8" style="margin-top: 1em;">
 			<form name="form1" method="get" action="products_search.php">
 				<div class="input-group" >
 					<input type="text" id="keyword" name="keyword" 
@@ -18,7 +18,7 @@
 			    </div>
 			</form>
 		</div>
-		<div class="col-2" style="margin-top: 1.5em; text-align: left;">
+		<!-- <div class="col-2" style="margin-top: 1.5em; text-align: left;">
 			<a href="<?php echo URL;?>shoppingcart_step1.php">
 				<span class="badge badge-light" 
 				style="position: absolute; top:-0.6em; right:1.8em; background-color: #ffd21d; font-size: 0.9em; padding: 0.5em;">
@@ -32,7 +32,7 @@
 						</span>
 				<i class="fas fa-shopping-cart" style="font-size: 1.8em; color: #FFFFFF;"></i>
 			</a>
-		</div>
+		</div> -->
 	</div>
 </div>
 
@@ -41,7 +41,7 @@
 	style="width: 100%; top: -50px; position: absolute; background-color: #FFFFFF; height: 45px; border-bottom: 1px solid #999999;">
 		<div class="row" style="margin-top: 1.5em;">
 			<div class="col-3">
-				<?php
+				<!-- <?php
 					if(isset($_SESSION['memid']) && $_SESSION['memid'] !=""){
 				?>
 						<a href="<?php echo URL?>logoff.php">ออกระบบ</a>
@@ -52,13 +52,11 @@
 				<?php
 
 					}
-				?>
-				
-				
-				
+				?> -->
+
 			</div>
 			<div class="col-3">
-				<a href="<?php echo URL?>member.php">สมัครสมาชิก</a>
+				<!-- <a href="<?php echo URL?>member.php">สมัครสมาชิก</a> -->
 			</div>
 			<div class="col-6" style="font-size: 3em; text-align: right;">
 				<div style="margin-top: -0.5em;">
@@ -95,7 +93,7 @@
 		                  ':param_type1_id' => $record_menu_topleft['id']
 		                );
 		                $str_producttype_level2 = "select * from producttype_level2 
-		                where id_producttype_level1  = :param_type1_id and status = 'Y' order by id ";
+		                where id_producttype_level1  = :param_type1_id and status = 'Y' order by ordinal_number";
 		                $result_producttype_level2 = $conn->prepare($str_producttype_level2);
 		                $result_producttype_level2->execute($array_param_type1);
 		                $div_name = "menusub".$count;
