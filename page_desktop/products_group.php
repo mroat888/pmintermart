@@ -41,7 +41,7 @@
                             );
                             $str_producttype_level2 = "select * from producttype_level2 
                             where status = :param_status and id_producttype_level1 = :param_type1_id 
-                            order by name ";
+                            order by ordinal_number , name ";
                             $result_producttype_level2 = $conn->prepare($str_producttype_level2);
                             $result_producttype_level2->execute($array_param_producttype_level2);
                             $count_producttype_level2 = $result_producttype_level2->rowCount();
