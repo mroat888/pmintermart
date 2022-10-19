@@ -78,7 +78,7 @@
                         ?>
                                     <div class="col-md-2" style="margin-top:5px;">
                                         <div style="text-align:center;">
-                                            <img src="<?php echo URL;?>/img_our_customer/<?=$record_client['id']?>-1.jpg" 
+                                            <img src="<?php echo URL;?>img_our_customer/<?=$record_client['id']?>-1.jpg" 
                                             style="max-width:100%;" alt="<?=$img_title?>" title="<?=$img_title?>">
                                         </div>
                                         <div style="height:50px; overflow:hidden; text-align:center;">

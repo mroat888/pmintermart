@@ -10,7 +10,7 @@
 <div class="mt-3">
     <div class="owl-carousel owl-theme">
         <?php
-            for($i=1; $i<=47; $i++){
+            for($i=1; $i<=48; $i++){
         ?>
         <div class="item">
             <img data-u="image" onclick="javascript:window.location.href='client.php'" 
