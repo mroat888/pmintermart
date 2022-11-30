@@ -57,7 +57,8 @@
                             product_sku.is_drop = :param_drop_status and 
                             product_name.id_producttype_level3 = :param_type3_id ";
                         
-                            $str_orderby = "order by product_name.position_index asc, product_sku.full_price , product_name.name , product_name.id desc";
+                            $str_orderby = "order by product_name.position_index asc, product_sku.full_price , 
+                            product_name.name , product_name.id desc , product_sku.ordinal_number";
                             $str_product_name = $str_product_name.$str_orderby;
                         
                             if(isset($_GET['nowpage'])){ ///--

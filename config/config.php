@@ -22,10 +22,9 @@
 
     // -- *_เข้าหลังบ้าน บล๊อค_*
     // https://www.pmintermart.com/pm-wpcontent/wp-admin/
-    // it-it.elehotelproducts@gmail.com
+    // it.elehotelproducts@gmail.com
     // admin
-    // 1111
-    
+    // oat12345678
 
     define("DB_TYPE", "mysql");
     define("DB_HOST", "localhost");

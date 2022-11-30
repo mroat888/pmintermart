@@ -96,7 +96,8 @@
                                 product_sku.is_drop = :param_drop_status and 
                                 product_sku.price > :param_price and 
                                 product_name.id_producttype_level1 = :param_type1_id "; 
-                                $str_orderby = "order by producttype_level2.name , product_sku.full_price , product_name.name , product_name.id desc";
+                                $str_orderby = "order by producttype_level2.name , product_sku.full_price , 
+                                product_name.name , product_name.id desc, product_sku.ordinal_number";
                             }else{
                                 // $str_product_name = "select id, product_code, name 
                                 // from product_name where is_drop = :param_drop_status and 
@@ -110,7 +111,8 @@
                                 product_sku.is_drop = :param_drop_status and 
                                 product_sku.price > :param_price and 
                                 product_name.id_producttype_level1 = :param_type1_id ";   
-                                $str_orderby = "order by product_sku.full_price , product_name.name , product_name.id desc";
+                                $str_orderby = "order by product_sku.full_price , product_name.name , 
+                                product_name.id desc, product_sku.ordinal_number";
                             }
                             
                             $str_product_name = $str_product_name.$str_orderby;
